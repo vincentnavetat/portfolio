@@ -19,14 +19,6 @@ const Home = React.createClass({
         <p>
           Suam denique cuique naturam esse ad vivendum ducem. Si qua in iis corrigere voluit, deteriora fecit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Audeo dicere, inquit. Iam id ipsum absurdum, maximum malum neglegi. Quid ergo hoc loco intellegit honestum? Multa sunt dicta ab antiquis de contemnendis ac despiciendis rebus humanis; Non quaeritur autem quid naturae tuae consentaneum sit, sed quid disciplinae. Ergo et avarus erit, sed finite, et adulter, verum habebit modum, et luxuriosus eodem modo. An potest cupiditas finiri? Quamvis enim depravatae non sint, pravae tamen esse possunt.
         </p>
-        <div className="nav-arrows">
-          <Link to={'ux-ui-design'} className="nav-arrow nav-arrow__prev">
-            Prev
-          </Link>
-          <Link to={'taskly'} className="nav-arrow nav-arrow__next">
-            Next
-          </Link>
-        </div>
       </div>
     );
   }

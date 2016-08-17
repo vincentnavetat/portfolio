@@ -38,10 +38,11 @@ const App = React.createClass({
           component={false}
           pathname={this.props.location.pathname}
           className="transition-wrapper"
-          atEnter={{opacity: 0, translateY: 10}}
+          atEnter={{opacity: 0}}
           atLeave={{opacity: 0}}
-          atActive={{opacity: spring(1, slideConfig), translateY: spring(0, slideConfig)}}
-          mapStyles={styles => ({ opacity: styles.opacity, transform: `translateY(${styles.translateY}%)`})}
+          atActive={{opacity: spring(1, slideConfig)}}
+          mapStyles={styles => ({ opacity: styles.opacity })}
+          runOnMount={false}
         >
           {this.props.children}
         </RouteTransition>
