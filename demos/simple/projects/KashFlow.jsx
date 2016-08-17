@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const UXUIDesign = React.createClass({
+const KashFlow = React.createClass({
   propTypes: {
     route: React.PropTypes.object
   },
@@ -77,10 +77,10 @@ const UXUIDesign = React.createClass({
         </div>
 
         <div className="nav-arrows">
-          <Link to={'taskly'} className="nav-arrow nav-arrow__prev">
+          <Link to={'ux-ui-design'} className="nav-arrow nav-arrow__prev">
             Prev
           </Link>
-          <Link to={'kashflow'} className="nav-arrow nav-arrow__next">
+          <Link to={'taskly'} className="nav-arrow nav-arrow__next">
             Next
           </Link>
         </div>
@@ -89,4 +89,4 @@ const UXUIDesign = React.createClass({
   }
 });
 
-export default UXUIDesign;
+export default KashFlow;
