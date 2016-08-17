@@ -13,8 +13,6 @@ const Routing = () => (
       <IndexRoute component={Home} title="Home" />
       <Route path="taskly" component={Taskly} title="Taskly" />
       <Route path="demo-1" component={Ipsum} title="1." />
-      <Route path="demo-2" component={Ipsum} title="2." />
-      <Route path="demo-3" component={Ipsum} title="3." />
     </Route>
   </Router>
 );

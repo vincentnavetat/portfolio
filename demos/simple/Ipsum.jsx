@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 /* eslint-disable */
 const content = `Content.`;
@@ -22,6 +23,15 @@ const Ipsum = React.createClass({
       <div className="lorem" style={this.props.style}>
         <h1>{this.props.route.title}</h1>
         <p>{content}</p>
+
+        <div className="nav-arrows">
+          <Link to={'taskly'} className="nav-arrow nav-arrow__prev">
+            Prev
+          </Link>
+          <Link to={'/'} className="nav-arrow nav-arrow__next">
+            Next
+          </Link>
+        </div>
       </div>
     );
   }
