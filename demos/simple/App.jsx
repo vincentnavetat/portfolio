@@ -20,20 +20,22 @@ const App = React.createClass({
 
   render() {
     return (
-      <div>
-        <Link to="/" key="home">Home</Link>
-        {this.props.route.childRoutes.map(({ path }) => {
-          const isActive = this.context.router.isActive(path);
-          return (
-            <Link
-              to={`/${path}`}
-              key={path}
-              className={isActive ? 'link active' : 'link'}
-            >
-              {path}
-            </Link>
-          );
-        })}
+      <div className="container">
+        <header className="header">
+          <Link to="/" key="home">Home</Link>
+          {this.props.route.childRoutes.map(({ path }) => {
+            const isActive = this.context.router.isActive(path);
+            return (
+              <Link
+                to={`/${path}`}
+                key={path}
+                className={isActive ? 'link active' : 'link'}
+              >
+                {path}
+              </Link>
+            );
+          })}
+        </header>
         <RouteTransition
           component={false}
           pathname={this.props.location.pathname}
