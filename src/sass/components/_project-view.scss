@@ -1,0 +1,98 @@
+.view-container {
+  background-color: hsla(0, 0%, 100%, 0.80);
+}
+
+.projects-container {
+  .project {
+    height: 400px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .project-title {
+    p {
+      text-align: justify;
+    }
+
+    .project-home-intro {
+      padding-left: 3em;
+      padding-right: 3em;
+    }
+
+    #port-source {
+      text-align: center;
+    }
+  }
+
+  .project-bullets {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  .project-tech {
+    padding-bottom: 1em;
+  }
+
+  .project-row {
+    img {
+      box-shadow: 0 0 30px -5px rgba(0,0,0,0.55);
+    }
+
+    .project-slider {
+      box-shadow: inset 0 7px 4px -3px rgba(50, 50, 50, 0.25);
+    }
+
+    .project-name {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      text-align: center;
+      vertical-align: center;
+    }
+  }
+}
+
+.about-container {
+  a {
+    text-decoration: none;
+  }
+
+  .about-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.project-view-title {
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.project-view-summary {
+  padding-bottom: 1em;
+}
+
+.project-view-tech-label {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.project-view-tech {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  cursor: default;
+  padding-bottom: 1em;
+}
+
+.project-view-tools {
+  margin: 2px;
+  padding-left: 1em;
+  padding-right: 1em;
+  border: 1px transparent;
+  border-radius: 5px;
+  color: white;
+}

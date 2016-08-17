@@ -1,0 +1,24 @@
+.header {
+  @include span-columns(12);
+}
+
+.nav-link {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  a,
+  a:visited {
+    color: inherit;
+    margin-left: 12px;
+    text-decoration: none;
+  }
+}
