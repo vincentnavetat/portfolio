@@ -1,12 +1,12 @@
 import React from 'react';
 
 /* eslint-disable */
-const content = `Content.`;
+const content = `Here is a test`;
 /* eslint-enable */
 
 // let count = 0;
 
-const Ipsum = React.createClass({
+const Home = React.createClass({
   propTypes: {
     route: React.PropTypes.object
   },
@@ -27,4 +27,4 @@ const Ipsum = React.createClass({
   }
 });
 
-export default Ipsum;
+export default Home;
