@@ -19,6 +19,10 @@ module.exports = {
       test: /\.jsx?$/,
       loader: 'babel',
       exclude: /lib|node_modules/
+    },
+    {
+      test: /\.(jpe?g|png|gif|svg)$/i,
+      loader: 'url?limit=10000!img?progressive=true'
     }]
   },
   resolve: {
