@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const Taskly = React.createClass({
+const UXUIDesign = React.createClass({
   propTypes: {
     route: React.PropTypes.object
   },
@@ -80,7 +80,7 @@ const Taskly = React.createClass({
           <Link to={'/'} className="nav-arrow nav-arrow__prev">
             Prev
           </Link>
-          <Link to={'taskly'} className="nav-arrow nav-arrow__next">
+          <Link to={'ux-ui-design'} className="nav-arrow nav-arrow__next">
             Next
           </Link>
         </div>
@@ -89,4 +89,4 @@ const Taskly = React.createClass({
   }
 });
 
-export default Taskly;
+export default UXUIDesign;

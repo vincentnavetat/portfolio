@@ -6,7 +6,7 @@ var demos = path.join(__dirname, 'demos');
 module.exports = {
   devtool: 'eval-source-map',
   entry: {
-    presets: path.join(demos, 'presets/index.jsx'),
+    //presets: path.join(demos, 'presets/index.jsx'),
     simple: path.join(demos, 'simple/index.jsx')
   },
   output: {

@@ -21,7 +21,7 @@ const Home = React.createClass({
         </p>
 
         <div className="nav-arrows">
-          <Link to={'demo-1'} className="nav-arrow nav-arrow__prev">
+          <Link to={'ux-ui-design'} className="nav-arrow nav-arrow__prev">
             Prev
           </Link>
           <Link to={'taskly'} className="nav-arrow nav-arrow__next">
