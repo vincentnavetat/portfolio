@@ -1,6 +1,32 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { RouteTransition } from '../../src/index';
+import { spring } from 'react-motion';
+
+const fadeConfig = { stiffness: 200, damping: 22 };
+const popConfig = { stiffness: 360, damping: 25 };
+const slideConfig = { stiffness: 330, damping: 30 };
+
+const settings = {
+  atEnter: {
+    opacity: 0,
+    offset: 100
+  },
+  atLeave: {
+    opacity: spring(0, fadeConfig),
+    offset: spring(-100, slideConfig)
+  },
+  atActive: {
+    opacity: spring(1, slideConfig),
+    offset: spring(0, slideConfig)
+  },
+  mapStyles(styles) {
+    return {
+      opacity: styles.opacity,
+      transform: `translateX(${styles.offset}%)`
+    };
+  }
+};
 
 const App = React.createClass({
   propTypes: {
@@ -32,9 +58,10 @@ const App = React.createClass({
           component={false}
           pathname={this.props.location.pathname}
           className="transition-wrapper"
-          atEnter={{ opacity: 0 }}
-          atLeave={{ opacity: 0 }}
-          atActive={{ opacity: 1 }}
+          atEnter={{ opacity: 0, translateY: 10 }}
+          atLeave={{ opacity: 0, translateY: 10 }}
+          atActive={{ opacity: spring(1, slideConfig), translateY: spring(0, slideConfig) }}
+          mapStyles={styles => ({ opacity: styles.opacity, transform: `translateY(${styles.translateY}%)` })}
         >
           {this.props.children}
         </RouteTransition>
