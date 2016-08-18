@@ -1,6 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+var imgPersonaDesigner = require('../../../src/medias/taskly/persona-designer.jpg');
+var imgPersonaEntrepreneur = require('../../../src/medias/taskly/persona-entrepreneur.jpg');
+var imgPersonaProjectManager = require('../../../src/medias/taskly/persona-project-manager.jpg');
+var imgTaskModel = require('../../../src/medias/taskly/task-model.png');
+var imgCustomerExperienceMap = require('../../../src/medias/taskly/customer-experience-map.png');
+
 const Taskly = React.createClass({
   propTypes: {
     route: React.PropTypes.object
@@ -38,12 +44,31 @@ const Taskly = React.createClass({
             In order to target specific user needs, I broke down the type of users into three categories:
             Busy Individuals (freelancers), People in Power (team leaders), and Team Members (employees that collaborate with others).
           </p>
-          <h3>
-            Task Model
-          </h3>
+
+          <div>
+            <div className="persona">
+              <img src={imgPersonaDesigner} alt="" />
+            </div>
+            <div className="persona">
+              <img src={imgPersonaEntrepreneur} alt="" />
+            </div>
+            <div className="persona">
+              <img src={imgPersonaProjectManager} alt="" />
+            </div>
+          </div>
+
           <h3>
             Customer experience map
           </h3>
+
+          <img src={imgCustomerExperienceMap} alt="Customer Experience Map for Taskly" />
+
+          <h3>
+            Task Model
+          </h3>
+
+          <img src={imgTaskModel} alt="Task Model for Taskly" />
+
           <h3>
             Site map
           </h3>

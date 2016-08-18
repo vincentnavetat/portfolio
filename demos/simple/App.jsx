@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import { RouteTransition } from '../../src/index';
 import { spring } from 'react-motion';
+import Header from './components/Header';
 
 const slideConfig = {
   stiffness: 330,
@@ -21,21 +22,7 @@ const App = React.createClass({
   render() {
     return (
       <div className="container">
-        <header className="header">
-          <Link to="/" key="home">Home</Link>
-          {this.props.route.childRoutes.map(({ path }) => {
-            const isActive = this.context.router.isActive(path);
-            return (
-              <Link
-                to={`/${path}`}
-                key={path}
-                className={isActive ? 'link active' : 'link'}
-              >
-                {path}
-              </Link>
-            );
-          })}
-        </header>
+        <Header />
         <RouteTransition
           component={false}
           pathname={this.props.location.pathname}

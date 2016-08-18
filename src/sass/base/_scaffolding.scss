@@ -2,6 +2,10 @@ html {
   font-size: 62.5%;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   @include outer-container(88rem);
 }
