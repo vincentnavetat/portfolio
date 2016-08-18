@@ -1,13 +1,13 @@
 'use strict';
 
 var path = require('path');
-var demos = path.join(__dirname, 'demos');
+var app = path.join(__dirname, 'app');
 
 module.exports = {
   devtool: 'eval-source-map',
   entry: {
     //presets: path.join(demos, 'presets/index.jsx'),
-    simple: path.join(demos, 'simple/index.jsx')
+    simple: path.join(app, '/index.jsx')
   },
   output: {
     path: './demos',
