@@ -5,13 +5,10 @@ var app = path.join(__dirname, 'app');
 
 module.exports = {
   devtool: 'eval-source-map',
-  entry: {
-    //presets: path.join(demos, 'presets/index.jsx'),
-    simple: path.join(app, '/index.jsx')
-  },
+  entry: path.join(app, '/index.jsx'),
   output: {
-    path: './demos',
-    filename: '[name]/index.js',
+    path: './',
+    filename: '/index.js',
     publicPath: '/'
   },
   module: {
@@ -36,7 +33,7 @@ module.exports = {
     configFile: '.eslintrc'
   },
   devServer: {
-    contentBase: './demos',
+    contentBase: './app',
     noInfo: false,
     hot: false,
     inline: true
