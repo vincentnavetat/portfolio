@@ -6,6 +6,9 @@ var imgPersonaEntrepreneur = require('../../../src/medias/taskly/persona-entrepr
 var imgPersonaProjectManager = require('../../../src/medias/taskly/persona-project-manager.jpg');
 var imgTaskModel = require('../../../src/medias/taskly/task-model.png');
 var imgCustomerExperienceMap = require('../../../src/medias/taskly/customer-experience-map.png');
+var imgSitemapCorporate = require('../../../src/medias/taskly/sitemap-corporate.png');
+var imgSitemapGeneral = require('../../../src/medias/taskly/sitemap-general.png');
+var imgSitemapProjects = require('../../../src/medias/taskly/sitemap-projects.png');
 
 const Taskly = React.createClass({
   propTypes: {
@@ -20,6 +23,12 @@ const Taskly = React.createClass({
     return (
       <div className="lorem" style={this.props.style}>
         <h1>{this.props.route.title}</h1>
+        
+        <div className="project-view-tech">
+          {tools.map((tool) => {
+            return <div className="project-view-tools" key={tool}>{tool}</div>;
+          })}
+        </div>
 
         <div className="project-view-summary">
           <p>
@@ -72,6 +81,22 @@ const Taskly = React.createClass({
           <h3>
             Site map
           </h3>
+
+          <h4>
+            Corporate Website
+          </h4>
+          <img src={imgSitemapCorporate} alt="" />
+
+          <h4>
+            Corporate Website
+          </h4>
+          <img src={imgSitemapGeneral} alt="" />
+
+          <h4>
+            Corporate Website
+          </h4>
+          <img src={imgSitemapProjects} alt="" />
+
           <p>
             After completing a card sorting exercise and full content audits on competitors, I was able to organize the essential Taskly features into a site map based on those findings.
           </p>
@@ -93,12 +118,6 @@ const Taskly = React.createClass({
           <h3>
             Final product design
           </h3>
-        </div>
-        <div className="project-view-tech-label">Tech</div>
-        <div className="project-view-tech">
-          {tools.map((tool) => {
-            return <div className="project-view-tools" key={tool}>{tool}</div>;
-          })}
         </div>
 
         <div className="nav-arrows">
