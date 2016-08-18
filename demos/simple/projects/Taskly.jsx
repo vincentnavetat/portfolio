@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import Slider from 'react-slick';
 
 var imgPersonaDesigner = require('../../../src/medias/taskly/persona-designer.jpg');
 var imgPersonaEntrepreneur = require('../../../src/medias/taskly/persona-entrepreneur.jpg');
@@ -9,6 +10,14 @@ var imgCustomerExperienceMap = require('../../../src/medias/taskly/customer-expe
 var imgSitemapCorporate = require('../../../src/medias/taskly/sitemap-corporate.png');
 var imgSitemapGeneral = require('../../../src/medias/taskly/sitemap-general.png');
 var imgSitemapProjects = require('../../../src/medias/taskly/sitemap-projects.png');
+
+var settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1
+};
 
 const Taskly = React.createClass({
   propTypes: {
@@ -23,7 +32,7 @@ const Taskly = React.createClass({
     return (
       <div className="lorem" style={this.props.style}>
         <h1>{this.props.route.title}</h1>
-        
+
         <div className="project-view-tech">
           {tools.map((tool) => {
             return <div className="project-view-tools" key={tool}>{tool}</div>;
@@ -88,12 +97,12 @@ const Taskly = React.createClass({
           <img src={imgSitemapCorporate} alt="" />
 
           <h4>
-            Corporate Website
+            App / General
           </h4>
           <img src={imgSitemapGeneral} alt="" />
 
           <h4>
-            Corporate Website
+            App / Projects
           </h4>
           <img src={imgSitemapProjects} alt="" />
 
@@ -106,6 +115,19 @@ const Taskly = React.createClass({
           <p>
             I always begin the design process with sketching to move quickly through my ideas and have a chance to test them before moving to the computer.
           </p>
+
+          <Slider {...settings}>
+            <div>
+              <img src={imgPersonaDesigner} alt="" />
+            </div>
+            <div>
+              <img src={imgPersonaEntrepreneur} alt="" />
+            </div>
+            <div>
+              <img src={imgPersonaProjectManager} alt="" />
+            </div>
+          </Slider>
+
           <h3>
             Wireframes
           </h3>
