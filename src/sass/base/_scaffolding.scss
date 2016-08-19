@@ -14,3 +14,10 @@ img {
   padding-top: 12rem;
   position: relative;
 }
+
+// ensures the transitions work
+.project,
+.project-cards {
+  position: absolute;
+  width: 100%;
+}
