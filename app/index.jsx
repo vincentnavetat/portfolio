@@ -23,7 +23,7 @@ const Routing = () => (
 );
 
 if (typeof window !== 'undefined') {
-  require('../src/sass/styles.scss');
+  require('./scss/styles.scss');
 }
 
 ReactDOM.render(<Routing />, document.querySelector('#app'));
