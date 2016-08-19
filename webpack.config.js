@@ -1,31 +1,51 @@
 'use strict';
 
+var webpack = require('webpack');
 var path = require('path');
-
-var src = path.join(__dirname, 'src');
+var app = path.join(__dirname, 'app');
 
 module.exports = {
   devtool: 'sourcemap',
-  entry: path.join(src, 'index.js'),
+  entry: path.join(app, '/index.jsx'),
   output: {
     path: path.join(__dirname, 'lib'),
-    filename: 'react-router-transition.js',
-    sourceMapFilename: 'react-router-transition.map',
-    library: 'ReactRouterTransition',
+    filename: 'portfolio.js',
+    sourceMapFilename: 'portfolio.map',
+    library: 'Portfolio',
     libraryTarget: 'umd'
   },
   module: {
     loaders: [{
       test: /\.jsx?$/,
       loader: 'babel',
-      include: src
+      include: app
+    },
+    {
+      test: /\.scss$/,
+      loaders: ["style", "css", "sass"]
+    },
+    {
+      test: /\.(jpe?g|png|gif|svg)$/i,
+      loader: 'url?limit=10000!img?progressive=true'
     }]
   },
   resolve: {
-    root: src,
+    root: app,
     extensions: ['', '.js', '.jsx']
   },
   eslint: {
     configFile: '.eslintrc'
-  }
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin(),
+    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+    new webpack.DefinePlugin({
+      'process.env': {
+        // This has effect on the react lib size
+        'NODE_ENV': JSON.stringify('production'),
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin()
+  ]
 };

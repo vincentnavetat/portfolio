@@ -2,9 +2,6 @@ import React from 'react';
 import { Link } from 'react-router';
 import Footer from '../components/Footer';
 
-var imgWeatherApp = require('../medias/ux-ui-design/weather-app.jpg');
-var imgSitemapProjects = require('../medias/ux-ui-design/physio-app.jpg');
-
 const UXUIDesign = React.createClass({
   propTypes: {
     route: React.PropTypes.object
@@ -30,12 +27,12 @@ const UXUIDesign = React.createClass({
             <h3>
               Weather App
             </h3>
-            <img src={imgWeatherApp} alt=""/>
+            <img src="../medias/ux-ui-design/weather-app.jpg" alt=""/>
 
             <h3>
               Physiotherapy App
             </h3>
-            <img src={imgSitemapProjects} alt=""/>
+            <img src="../medias/ux-ui-design/physio-app.jpg" alt=""/>
 
           </div>
 
