@@ -12,9 +12,9 @@ const KashFlow = React.createClass({
     ];
 
     return (
-      <div className="lorem" style={this.props.style}>
+      <div className="project" style={this.props.style}>
         <h1>{this.props.route.title}</h1>
-        
+
         <div className="project-view-tech">
           {tools.map((tool) => {
             return <div className="project-view-tools" key={tool}>{tool}</div>;

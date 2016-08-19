@@ -11,7 +11,7 @@ var imgSitemapCorporate = require('../medias/taskly/sitemap-corporate.png');
 var imgSitemapGeneral = require('../medias/taskly/sitemap-general.png');
 var imgSitemapProjects = require('../medias/taskly/sitemap-projects.png');
 
-var settings = {
+var sliderSettings = {
   dots: true,
   infinite: true,
   speed: 500,
@@ -30,7 +30,7 @@ const Taskly = React.createClass({
     ];
 
     return (
-      <div className="lorem" style={this.props.style}>
+      <div className="project" style={this.props.style}>
         <h1>{this.props.route.title}</h1>
 
         <div className="project-view-tech">
@@ -116,7 +116,7 @@ const Taskly = React.createClass({
             I always begin the design process with sketching to move quickly through my ideas and have a chance to test them before moving to the computer.
           </p>
 
-          <Slider {...settings}>
+          <Slider {...sliderSettings}>
             <div>
               <img src={imgPersonaDesigner} alt="" />
             </div>

@@ -9,3 +9,7 @@ img {
 .container {
   @include outer-container(88rem);
 }
+
+.transition-wrapper {
+  position: relative;
+}
