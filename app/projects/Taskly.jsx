@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Slider from 'react-slick';
-import { render } from 'react-dom';
-import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
 
 var sliderSettings = {
@@ -12,16 +10,6 @@ var sliderSettings = {
   slidesToShow: 1,
   slidesToScroll: 1
 };
-
-const IMAGE_NAMES = ['imgPersonaEntrepreneur', 'imgPersonaDesigner'];
-const IMAGE_MAP = IMAGE_NAMES.map(img => ({
-	src: `${img}`,
-	thumbnail: `${img}`,
-	srcset: [
-		`${img} 1024w`,
-	],
-	caption: img,
-}));
 
 const Taskly = React.createClass({
   propTypes: {
@@ -132,10 +120,6 @@ const Taskly = React.createClass({
                 <img src="../medias/taskly/persona-designer.jpg" alt="" />
               </div>
             </Slider>
-
-            <div>
-              <Gallery images={IMAGE_MAP} />
-            </div>
 
             <h3>
               Wireframes
