@@ -1,13 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { RouteTransition } from '../src/index';
-import { spring } from 'react-motion';
+import RouteTransition from './components/RouteTransition';
 import Header from './components/Header';
-
-const slideConfig = {
-  stiffness: 330,
-  damping: 30
-};
 
 const App = React.createClass({
   propTypes: {
