@@ -21,19 +21,21 @@ const App = React.createClass({
 
   render() {
     return (
-      <div className="container">
+      <div>
         <Header />
-        <RouteTransition
-          component={false}
-          pathname={this.props.location.pathname}
-          className="transition-wrapper"
-          atEnter={{ opacity: 0 }}
-          atLeave={{ opacity: 0 }}
-          atActive={{ opacity: 1 }}
-          runOnMount={false}
-        >
-          {this.props.children}
-        </RouteTransition>
+        <div className="container">
+          <RouteTransition
+            component={false}
+            pathname={this.props.location.pathname}
+            className="transition-wrapper"
+            atEnter={{ opacity: 0 }}
+            atLeave={{ opacity: 0 }}
+            atActive={{ opacity: 1 }}
+            runOnMount={false}
+          >
+            {this.props.children}
+          </RouteTransition>
+        </div>
       </div>
     );
   }

@@ -5,7 +5,9 @@ const Header = React.createClass({
   render() {
     return (
       <header className="header">
-        <Link to="/" key="home">Home</Link>
+        <div className="container">
+          <Link to="/" key="home" className="header__link">Home</Link>
+        </div>
       </header>
     );
   }

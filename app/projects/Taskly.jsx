@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Slider from 'react-slick';
+import Gallery from '../components/Gallery';
 
 var imgPersonaDesigner = require('../medias/taskly/persona-designer.jpg');
 var imgPersonaEntrepreneur = require('../medias/taskly/persona-entrepreneur.jpg');
@@ -18,6 +19,16 @@ var sliderSettings = {
   slidesToShow: 1,
   slidesToScroll: 1
 };
+
+const IMAGE_NAMES = ['cat', 'cats', 'chameleon', 'dog', 'ducks', 'goat', 'ostrich', 'pigeon', 'pigs', 'seagulls', 'wasp', 'yawn'];
+const IMAGE_MAP = IMAGE_NAMES.map(img => ({
+	src: imgPersonaDesigner,
+	thumbnail: imgPersonaDesigner,
+	srcset: [
+		imgPersonaDesigner
+	],
+	caption: img,
+}));
 
 const Taskly = React.createClass({
   propTypes: {
