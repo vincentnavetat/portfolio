@@ -4,41 +4,32 @@ import Slider from 'react-slick';
 import Footer from '../components/Footer';
 import Lightbox from 'react-image-lightbox';
 
-var sliderSettings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1
-};
-
- var images = [
-  '../medias/taskly/persona-designer.jpg',
-  '../medias/taskly/persona-entrepreneur.jpg',
-];
-
 const Taskly = React.createClass({
   propTypes: {
     route: React.PropTypes.object
   },
 
   getInitialState: function() {
-      return {
-          index: 0,
-          isOpen: false
-      };
+    return {
+      index: 0,
+      isOpen: false
+    };
   },
+
   openLightbox: function() {
-      this.setState({ isOpen: true });
+    this.setState({ isOpen: true });
   },
+
   closeLightbox: function() {
-      this.setState({ isOpen: false });
+    this.setState({ isOpen: false });
   },
+
   moveNext: function() {
-      this.setState({ index: (this.state.index + 1) % images.length });
+    this.setState({ index: (this.state.index + 1) % images.length });
   },
+
   movePrev: function() {
-      this.setState({ index: (this.state.index + images.length - 1) % images.length });
+    this.setState({ index: (this.state.index + images.length - 1) % images.length });
   },
 
   render() {
@@ -46,20 +37,33 @@ const Taskly = React.createClass({
       'UX Design'
     ];
 
-    var lightbox = '';
-        if (this.state.isOpen) {
-            lightbox = (
-                <Lightbox
-                    mainSrc={images[this.state.index]}
-                    nextSrc={images[(this.state.index + 1) % images.length]}
-                    prevSrc={images[(this.state.index + images.length - 1) % images.length]}
+    var sliderSettings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
 
-                    onCloseRequest={this.closeLightbox}
-                    onMovePrevRequest={this.movePrev}
-                    onMoveNextRequest={this.moveNext}
-                />
-            );
-        }
+    var images = [
+      '../medias/taskly/persona-designer.jpg',
+      '../medias/taskly/persona-entrepreneur.jpg',
+    ];
+
+    var lightbox = '';
+    if (this.state.isOpen) {
+      lightbox = (
+        <Lightbox
+            mainSrc={images[this.state.index]}
+            nextSrc={images[(this.state.index + 1) % images.length]}
+            prevSrc={images[(this.state.index + images.length - 1) % images.length]}
+
+            onCloseRequest={this.closeLightbox}
+            onMovePrevRequest={this.movePrev}
+            onMoveNextRequest={this.moveNext}
+        />
+      );
+    }
 
     return (
       <div className="page-content">
