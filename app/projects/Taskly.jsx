@@ -4,6 +4,11 @@ import Slider from 'react-slick';
 import Footer from '../components/Footer';
 import Lightbox from 'react-image-lightbox';
 
+var images = [
+  '../medias/taskly/persona-designer.jpg',
+  '../medias/taskly/persona-entrepreneur.jpg',
+];
+
 const Taskly = React.createClass({
   propTypes: {
     route: React.PropTypes.object
@@ -40,27 +45,22 @@ const Taskly = React.createClass({
     var sliderSettings = {
       dots: true,
       infinite: true,
-      speed: 500,
+      speed: 400,
       slidesToShow: 1,
       slidesToScroll: 1
     };
 
-    var images = [
-      '../medias/taskly/persona-designer.jpg',
-      '../medias/taskly/persona-entrepreneur.jpg',
-    ];
 
     var lightbox = '';
     if (this.state.isOpen) {
       lightbox = (
         <Lightbox
-            mainSrc={images[this.state.index]}
-            nextSrc={images[(this.state.index + 1) % images.length]}
-            prevSrc={images[(this.state.index + images.length - 1) % images.length]}
-
-            onCloseRequest={this.closeLightbox}
-            onMovePrevRequest={this.movePrev}
-            onMoveNextRequest={this.moveNext}
+          mainSrc={images[this.state.index]}
+          nextSrc={images[(this.state.index + 1) % images.length]}
+          prevSrc={images[(this.state.index + images.length - 1) % images.length]}
+          onCloseRequest={this.closeLightbox}
+          onMovePrevRequest={this.movePrev}
+          onMoveNextRequest={this.moveNext}
         />
       );
     }
@@ -159,13 +159,55 @@ const Taskly = React.createClass({
 
             <Slider {...sliderSettings}>
               <div>
-                <img src="../medias/taskly/persona-designer.jpg" alt="" />
+                <img src="../medias/taskly/paper-prototype-01-dashboard.jpg" alt="" />
               </div>
               <div>
-                <img src="../medias/taskly/persona-designer.jpg" alt="" />
+                <img src="../medias/taskly/paper-prototype-02-navigation.jpg" alt="" />
               </div>
               <div>
-                <img src="../medias/taskly/persona-designer.jpg" alt="" />
+                <img src="../medias/taskly/paper-prototype-03-new-project.jpg" alt="" />
+              </div>
+              <div>
+                <img src="../medias/taskly/paper-prototype-04-project-setup.jpg" alt="" />
+              </div>
+              <div>
+                <img src="../medias/taskly/paper-prototype-05-project-menu.jpg" alt="" />
+              </div>
+              <div>
+                <img src="../medias/taskly/paper-prototype-06-new-task.jpg" alt="" />
+              </div>
+              <div>
+                <img src="../medias/taskly/paper-prototype-07-task.jpg" alt="" />
+              </div>
+              <div>
+                <img src="../medias/taskly/paper-prototype-08-project.jpg" alt="" />
+              </div>
+              <div>
+                <img src="../medias/taskly/paper-prototype-09-sprint.jpg" alt="" />
+              </div>
+              <div>
+                <img src="../medias/taskly/paper-prototype-10-team-member.jpg" alt="" />
+              </div>
+              <div>
+                <img src="../medias/taskly/paper-prototype-11-conversations.jpg" alt="" />
+              </div>
+              <div>
+                <img src="../medias/taskly/paper-prototype-12-new-conversation.jpg" alt="" />
+              </div>
+              <div>
+                <img src="../medias/taskly/paper-prototype-13-conversation.jpg" alt="" />
+              </div>
+              <div>
+                <img src="../medias/taskly/paper-prototype-14-new-conversation.jpg" alt="" />
+              </div>
+              <div>
+                <img src="../medias/taskly/paper-prototype-15-files.jpg" alt="" />
+              </div>
+              <div>
+                <img src="../medias/taskly/paper-prototype-16-new-files.jpg" alt="" />
+              </div>
+              <div>
+                <img src="../medias/taskly/paper-prototype-17-file-history.jpg" alt="" />
               </div>
             </Slider>
 
