@@ -1,17 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Slider from 'react-slick';
+import { render } from 'react-dom';
 import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
-
-var imgPersonaDesigner = require('../medias/taskly/persona-designer.jpg');
-var imgPersonaEntrepreneur = require('../medias/taskly/persona-entrepreneur.jpg');
-var imgPersonaProjectManager = require('../medias/taskly/persona-project-manager.jpg');
-var imgTaskModel = require('../medias/taskly/task-model.png');
-var imgCustomerExperienceMap = require('../medias/taskly/customer-experience-map.png');
-var imgSitemapCorporate = require('../medias/taskly/sitemap-corporate.png');
-var imgSitemapGeneral = require('../medias/taskly/sitemap-general.png');
-var imgSitemapProjects = require('../medias/taskly/sitemap-projects.png');
 
 var sliderSettings = {
   dots: true,
@@ -21,12 +13,12 @@ var sliderSettings = {
   slidesToScroll: 1
 };
 
-const IMAGE_NAMES = ['cat', 'cats', 'chameleon', 'dog', 'ducks', 'goat', 'ostrich', 'pigeon', 'pigs', 'seagulls', 'wasp', 'yawn'];
+const IMAGE_NAMES = ['imgPersonaEntrepreneur', 'imgPersonaDesigner'];
 const IMAGE_MAP = IMAGE_NAMES.map(img => ({
-	src: imgPersonaDesigner,
-	thumbnail: imgPersonaDesigner,
+	src: `${img}`,
+	thumbnail: `${img}`,
 	srcset: [
-		imgPersonaDesigner
+		`${img} 1024w`,
 	],
 	caption: img,
 }));
@@ -78,13 +70,13 @@ const Taskly = React.createClass({
 
             <div>
               <div className="persona">
-                <img src={imgPersonaDesigner} alt="" />
+                <img src="../medias/taskly/persona-designer.jpg" alt="" />
               </div>
               <div className="persona">
-                <img src={imgPersonaEntrepreneur} alt="" />
+                <img src="../medias/taskly/persona-entrepreneur.jpg" alt="" />
               </div>
               <div className="persona">
-                <img src={imgPersonaProjectManager} alt="" />
+                <img src="../medias/taskly/persona-project-manager.jpg" alt="" />
               </div>
             </div>
 
@@ -92,13 +84,13 @@ const Taskly = React.createClass({
               Customer experience map
             </h3>
 
-            <img src={imgCustomerExperienceMap} alt="Customer Experience Map for Taskly" />
+            <img src="../medias/taskly/customer-experience-map.png" alt="Customer Experience Map for Taskly" />
 
             <h3>
               Task Model
             </h3>
 
-            <img src={imgTaskModel} alt="Task Model for Taskly" />
+            <img src="../medias/taskly/task-model.png" alt="Task Model for Taskly" />
 
             <h3>
               Site map
@@ -107,17 +99,17 @@ const Taskly = React.createClass({
             <h4>
               Corporate Website
             </h4>
-            <img src={imgSitemapCorporate} alt="" />
+            <img src="../medias/taskly/sitemap-corporate.png" alt="" />
 
             <h4>
               App / General
             </h4>
-            <img src={imgSitemapGeneral} alt="" />
+            <img src="../medias/taskly/sitemap-general.png" alt="" />
 
             <h4>
               App / Projects
             </h4>
-            <img src={imgSitemapProjects} alt="" />
+            <img src="../medias/taskly/sitemap-projects.png" alt="" />
 
             <p>
               After completing a card sorting exercise and full content audits on competitors, I was able to organize the essential Taskly features into a site map based on those findings.
@@ -131,15 +123,19 @@ const Taskly = React.createClass({
 
             <Slider {...sliderSettings}>
               <div>
-                <img src={imgPersonaDesigner} alt="" />
+                <img src="../medias/taskly/persona-designer.jpg" alt="" />
               </div>
               <div>
-                <img src={imgPersonaEntrepreneur} alt="" />
+                <img src="../medias/taskly/persona-designer.jpg" alt="" />
               </div>
               <div>
-                <img src={imgPersonaProjectManager} alt="" />
+                <img src="../medias/taskly/persona-designer.jpg" alt="" />
               </div>
             </Slider>
+
+            <div>
+              <Gallery images={IMAGE_MAP} />
+            </div>
 
             <h3>
               Wireframes
