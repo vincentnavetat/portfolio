@@ -8,11 +8,8 @@ import Taskly from './projects/Taskly';
 import UXUIDesign from './projects/UXUIDesign';
 import KashFlow from './projects/KashFlow';
 
-var Scroll = require('react-scroll');
-var scroll = Scroll.animateScroll;
-
 const Routing = () => (
-  <Router onUpdate={() => scroll.scrollToTop({ duration: 300 })} history={hashHistory}>
+  <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home} title="Home" />
       <Route path="taskly" component={Taskly} title="Taskly" />
