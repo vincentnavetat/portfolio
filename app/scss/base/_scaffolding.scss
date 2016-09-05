@@ -17,6 +17,11 @@ img {
 
 // ensures the transitions work
 .page-content {
+  padding: 0 1.5rem;
   position: absolute;
   width: 100%;
+
+  @include media($tablet) {
+    padding: 0;
+  }
 }

@@ -13,39 +13,41 @@ const UXUIDesign = React.createClass({
     ];
 
     return (
-      <div className="page-content">
-        <div className="project" style={this.props.style}>
-          <h1>{this.props.route.title}</h1>
+      <div className="page-wrapper">
+        <div className="page-content" style={this.props.style}>
+          <div className="project">
+            <h1>{this.props.route.title}</h1>
 
-          <div className="project-view-tech">
-            {tools.map((tool) => {
-              return <div className="project-view-tools" key={tool}>{tool}</div>;
-            })}
+            <div className="project-view-tech">
+              {tools.map((tool) => {
+                return <div className="project-view-tools" key={tool}>{tool}</div>;
+              })}
+            </div>
+
+            <div className="project-view-summary">
+              <h3>
+                Weather App
+              </h3>
+              <img src="../medias/ux-ui-design/weather-app.jpg" alt=""/>
+
+              <h3>
+                Physiotherapy App
+              </h3>
+              <img src="../medias/ux-ui-design/physio-app.jpg" alt=""/>
+
+            </div>
+
+            <div className="nav-arrows">
+              <Link to={'taskly'} className="nav-arrow nav-arrow__prev">
+                Prev
+              </Link>
+              <Link to={'kashflow'} className="nav-arrow nav-arrow__next">
+                Next
+              </Link>
+            </div>
           </div>
-
-          <div className="project-view-summary">
-            <h3>
-              Weather App
-            </h3>
-            <img src="../medias/ux-ui-design/weather-app.jpg" alt=""/>
-
-            <h3>
-              Physiotherapy App
-            </h3>
-            <img src="../medias/ux-ui-design/physio-app.jpg" alt=""/>
-
-          </div>
-
-          <div className="nav-arrows">
-            <Link to={'taskly'} className="nav-arrow nav-arrow__prev">
-              Prev
-            </Link>
-            <Link to={'kashflow'} className="nav-arrow nav-arrow__next">
-              Next
-            </Link>
-          </div>
+          <Footer />
         </div>
-        <Footer />
       </div>
     );
   }
