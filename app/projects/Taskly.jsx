@@ -269,8 +269,11 @@ const Taskly = React.createClass({
               </Slider>
 
               <h3>
-                UI kit
+                UI Design
               </h3>
+
+              <img src="../medias/taskly/ui-demo.jpg" alt="" />
+
               <h3>
                 Final product design
               </h3>
