@@ -1,9 +1,17 @@
-.slick-slide {
-  // text-align: center;
+.slick-arrow {
+  &::before {
+    color: black;
+  }
+}
 
-  img {
-    // display: inline-block;
-    // max-height: 60rem;
-    // max-width: 84rem;
+.slick-prev {
+  &::before {
+    content: '<';
+  }
+}
+
+.slick-next {
+  &::before {
+    content: '>';
   }
 }

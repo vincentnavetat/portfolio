@@ -46,7 +46,7 @@ const Taskly = React.createClass({
     var sliderSettings = {
       dots: false,
       infinite: false,
-      speed: 500,
+      speed: 400,
       slidesToShow: 1,
       slidesToScroll: 1
     };
