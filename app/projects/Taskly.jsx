@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Slider from 'react-slick';
-import Footer from '../components/Footer';
 import Lightbox from 'react-image-lightbox';
+import Footer from '../components/Footer';
 
 var images = [
   '../medias/taskly/persona-designer.jpg',
   '../medias/taskly/persona-entrepreneur.jpg',
+  '../medias/taskly/persona-project-manager.jpg',
 ];
 
 const Taskly = React.createClass({
@@ -21,8 +22,8 @@ const Taskly = React.createClass({
     };
   },
 
-  openLightbox: function() {
-    this.setState({ isOpen: true });
+  openLightbox: function(currentIndex) {
+    this.setState({ index: currentIndex, isOpen: true });
   },
 
   closeLightbox: function() {
@@ -43,9 +44,9 @@ const Taskly = React.createClass({
     ];
 
     var sliderSettings = {
-      dots: true,
-      infinite: true,
-      speed: 400,
+      dots: false,
+      infinite: false,
+      speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1
     };
@@ -102,19 +103,23 @@ const Taskly = React.createClass({
 
             <div>
               <div className="persona">
-
-              </div>
-
-              <button type="button" onClick={this.openLightbox}>Open Lightbox</button>
-                {lightbox}
-
-              <div className="persona">
-                <img src="../medias/taskly/persona-entrepreneur.jpg" alt="" />
+                <a onClick={() => this.openLightbox(0)} href="javascript:void(0)">
+                  <img src="../medias/taskly/persona-designer.jpg" alt="" />
+                </a>
               </div>
               <div className="persona">
-                <img src="../medias/taskly/persona-project-manager.jpg" alt="" />
+                <a onClick={() => this.openLightbox(1)} href="javascript:void(0)">
+                  <img src="../medias/taskly/persona-entrepreneur.jpg" alt="" />
+                </a>
+              </div>
+              <div className="persona">
+                <a onClick={() => this.openLightbox(2)} href="javascript:void(0)">
+                  <img src="../medias/taskly/persona-project-manager.jpg" alt="" />
+                </a>
               </div>
             </div>
+
+            {lightbox}
 
             <h3>
               Customer experience map
