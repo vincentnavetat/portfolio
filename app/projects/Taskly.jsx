@@ -225,55 +225,46 @@ const Taskly = React.createClass({
 
               <Slider {...sliderSettings}>
                 <div>
-                  <img src="../medias/taskly/paper-prototype-01-dashboard.jpg" alt="" />
+                  <img src="../medias/taskly/wireframes-mobile-01-login.png" alt="" />
                 </div>
                 <div>
-                  <img src="../medias/taskly/paper-prototype-02-navigation.jpg" alt="" />
+                  <img src="../medias/taskly/wireframes-mobile-02-navigation.png" alt="" />
                 </div>
                 <div>
-                  <img src="../medias/taskly/paper-prototype-03-new-project.jpg" alt="" />
+                  <img src="../medias/taskly/wireframes-mobile-03-new-project.png" alt="" />
                 </div>
                 <div>
-                  <img src="../medias/taskly/paper-prototype-04-project-setup.jpg" alt="" />
+                  <img src="../medias/taskly/wireframes-mobile-04-new-task.png" alt="" />
                 </div>
                 <div>
-                  <img src="../medias/taskly/paper-prototype-05-project-menu.jpg" alt="" />
+                  <img src="../medias/taskly/wireframes-mobile-05-new-file.png" alt="" />
                 </div>
                 <div>
-                  <img src="../medias/taskly/paper-prototype-06-new-task.jpg" alt="" />
+                  <img src="../medias/taskly/wireframes-mobile-06-add-team-member.png" alt="" />
                 </div>
                 <div>
-                  <img src="../medias/taskly/paper-prototype-07-task.jpg" alt="" />
+                  <img src="../medias/taskly/wireframes-tablet-01-navigation.png" alt="" />
                 </div>
                 <div>
-                  <img src="../medias/taskly/paper-prototype-08-project.jpg" alt="" />
+                  <img src="../medias/taskly/wireframes-tablet-02-new-project.png" alt="" />
                 </div>
                 <div>
-                  <img src="../medias/taskly/paper-prototype-09-sprint.jpg" alt="" />
+                  <img src="../medias/taskly/wireframes-tablet-03-new-task.png" alt="" />
                 </div>
                 <div>
-                  <img src="../medias/taskly/paper-prototype-10-team-member.jpg" alt="" />
+                  <img src="../medias/taskly/wireframes-tablet-04-new-file.png" alt="" />
                 </div>
                 <div>
-                  <img src="../medias/taskly/paper-prototype-11-conversations.jpg" alt="" />
+                  <img src="../medias/taskly/wireframes-desktop-01-navigation.png" alt="" />
                 </div>
                 <div>
-                  <img src="../medias/taskly/paper-prototype-12-new-conversation.jpg" alt="" />
+                  <img src="../medias/taskly/wireframes-desktop-02-new-project.png" alt="" />
                 </div>
                 <div>
-                  <img src="../medias/taskly/paper-prototype-13-conversation.jpg" alt="" />
+                  <img src="../medias/taskly/wireframes-desktop-03-new-task.png" alt="" />
                 </div>
                 <div>
-                  <img src="../medias/taskly/paper-prototype-14-new-conversation.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-15-files.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-16-new-files.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-17-file-history.jpg" alt="" />
+                  <img src="../medias/taskly/wireframes-desktop-04-new-file.png" alt="" />
                 </div>
               </Slider>
 
