@@ -3,9 +3,10 @@
 
 @import './helpers/variables';
 
-@import './base/scaffolding';
-@import './base/typography';
 @import './base/fonts';
+@import './base/typography';
+@import './base/scaffolding';
+@import './base/type';
 
 @import './layout/header';
 @import './layout/footer';

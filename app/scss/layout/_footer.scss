@@ -1,3 +1,13 @@
-.footer {
-  
+.footer__social-networks {
+  list-style-type: none;
+}
+
+.social-network {
+  display: inline;
+}
+
+.social-network__link {
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
 }
