@@ -1,3 +1,7 @@
+.footer {
+  margin: 8rem 0 3rem;
+}
+
 .footer__social-networks {
   list-style-type: none;
 }
@@ -13,11 +17,20 @@
   height: 3rem;
   margin-left: 1rem;
   padding-top: .6rem;
+  transition: box-shadow .2s cubic-bezier(.2, 0, .7, 1);
   width: 3rem;
+
+  &:hover {
+    box-shadow: 0 0 .1rem .5rem rgba($pelorous, .4);
+  }
 
   svg {
     fill: $white;
     height: 1.7rem;
     width: 1.7rem;
   }
+}
+
+.footer__credits {
+  color: $heather;
 }

@@ -67,6 +67,8 @@ const Footer = React.createClass({
               </a>
             </li>
           </ul>
+
+          <div className="footer__credits text-center">© Vincent Navetat 2016</div>
         </div>
       </footer>
     );
