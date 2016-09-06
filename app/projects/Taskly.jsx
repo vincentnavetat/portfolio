@@ -281,10 +281,10 @@ const Taskly = React.createClass({
 
             <div className="nav-arrows">
               <Link to={'kashflow'} className="nav-arrow nav-arrow__prev">
-                Prev
+                ← Prev
               </Link>
               <Link to={'ux-ui-design'} className="nav-arrow nav-arrow__next">
-                Next
+                Next →
               </Link>
             </div>
           </div>
