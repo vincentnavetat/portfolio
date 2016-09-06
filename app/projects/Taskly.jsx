@@ -11,6 +11,12 @@ var images = [
   '../medias/taskly/persona-project-manager.jpg',
 ];
 
+var captions = [
+  'Persona: Designer',
+  'Persona: Entrepreneur',
+  'Persona: Project Manager',
+];
+
 const Taskly = React.createClass({
   propTypes: {
     route: React.PropTypes.object
@@ -62,6 +68,7 @@ const Taskly = React.createClass({
           onCloseRequest={this.closeLightbox}
           onMovePrevRequest={this.movePrev}
           onMoveNextRequest={this.moveNext}
+          imageTitle={captions[this.state.index]}
         />
       );
     }
