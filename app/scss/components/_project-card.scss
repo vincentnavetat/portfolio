@@ -4,18 +4,32 @@
 
 .project-card {
   display: block;
+  height: 58.5rem;
   margin-bottom: 3rem;
+  overflow: hidden;
 
   &:hover {
     .project-card__name {
-      display: block;
+      opacity: 1;
+      transform: translate(1rem, 0);
+    }
+
+    .project-card__image {
+      transform: scale(1.05);
     }
   }
 }
 
+.project-card__name,
+.project-card__image {
+  transition: all .3s ease-out;
+}
+
 .project-card__name {
-  display: none;
+  color: $white;
+  opacity: 0;
   position: absolute;
+  z-index: 1;
 }
 
 .project-card__image {

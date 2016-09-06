@@ -12,7 +12,6 @@ const Home = React.createClass({
       <div className="page-wrapper">
         <div className="page-content" style={this.props.style}>
           <h1>Selected Projects</h1>
-
           <div className="project-cards">
             <Link to={'taskly'} className="project-card">
               <h2 className="project-card__name">Taskly</h2>
