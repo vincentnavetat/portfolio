@@ -11,10 +11,16 @@ $desktop: new-breakpoint(min-width $desktop-size 12);
 $largedesktop: new-breakpoint(min-width $largedesktop-size 16);
 
 // Colors
-$pelorous: #3eafc1;
-$pale-sky: #6a7986;
-$heather: #bbc3ce;
 $white: #fff;
+$alabaster: #fafafa;
+$athens-gray: #eaedf1;
+$heather: #bbc3ce;
+$pale-sky: #6a7986;
+$pelorous: #3eafc1;
+
+// Sizes
+$font-size-base: 1.4rem;
+$font-size-base-plus: 1.6rem;
 
 // Weights
 $weight-s: 300;

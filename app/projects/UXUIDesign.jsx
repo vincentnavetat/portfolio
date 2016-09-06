@@ -37,9 +37,8 @@ const UXUIDesign = React.createClass({
               <img src="../medias/ux-ui-design/physio-app.jpg" alt=""/>
 
             </div>
-
-            <Navigation prev="taskly" next="kashflow" />
           </div>
+          <Navigation prev="taskly" next="kashflow" />
           <Footer />
         </div>
       </div>

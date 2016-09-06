@@ -69,7 +69,7 @@ const Taskly = React.createClass({
     return (
       <div className="page-wrapper">
         <div className="page-content" style={this.props.style}>
-          <div className="project" >
+          <div className="project">
             <h1>{this.props.route.title}</h1>
 
             <div className="project-view-tech">
@@ -279,13 +279,12 @@ const Taskly = React.createClass({
                 Final product design
               </h3>
 
-              <p>
-                <a href="#" className="">View mobile prototype</a>
+              <p className="text-center">
+                <a href="#" className="btn">View mobile prototype</a>
               </p>
             </div>
-
-            <Navigation prev="kashflow" next="ux-ui-design" />
           </div>
+          <Navigation prev="kashflow" next="ux-ui-design" />
           <Footer />
         </div>
       </div>

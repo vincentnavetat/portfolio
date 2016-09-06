@@ -30,9 +30,8 @@ const KashFlow = React.createClass({
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum sine causa fieri nihil putandum est. Duo Reges: constructio interrete. Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus; Hoc enim constituto in philosophia constituta sunt omnia. Ex rebus enim timiditas, non ex vocabulis nascitur. Plane idem, inquit, et maxima quidem, qua fieri nulla maior potest. Huius, Lyco, oratione locuples, rebus ipsis ielunior. Vos autem cum perspicuis dubia debeatis illustrare, dubiis perspicua conamini tollere. Non igitur de improbo, sed de callido improbo quaerimus, qualis Q. Ita relinquet duas, de quibus etiam atque etiam consideret.
               </p>
             </div>
-
-            <Navigation prev="ux-ui-design" next="taskly" />
           </div>
+          <Navigation prev="ux-ui-design" next="taskly" />
           <Footer />
         </div>
       </div>

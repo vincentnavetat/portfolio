@@ -1,7 +1,5 @@
 @include media($tablet) {
   .nav-arrow {
-    background: $white;
-    border: 0;
     border-radius: 50%;
     color: $pale-sky;
     height: 7.5rem;
@@ -15,7 +13,7 @@
     z-index: 1;
 
     &:hover {
-      box-shadow: 0 0 .1rem .75rem rgba($pale-sky, .4),
+      box-shadow: 0 0 .1rem .75rem rgba($pale-sky, .3),
       0 0 .1rem 1.5rem rgba($pale-sky, .2),
       0 0 .1rem 2.25rem rgba($pale-sky, .1);
     }
