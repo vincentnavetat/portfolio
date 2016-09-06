@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 const UXUIDesign = React.createClass({
@@ -37,14 +38,7 @@ const UXUIDesign = React.createClass({
 
             </div>
 
-            <div className="nav-arrows">
-              <Link to={'taskly'} className="nav-arrow nav-arrow__prev">
-                Prev
-              </Link>
-              <Link to={'kashflow'} className="nav-arrow nav-arrow__next">
-                Next
-              </Link>
-            </div>
+            <Navigation prev="taskly" next="kashflow" />
           </div>
           <Footer />
         </div>

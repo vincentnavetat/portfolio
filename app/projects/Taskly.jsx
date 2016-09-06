@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import Slider from 'react-slick';
 import Lightbox from 'react-image-lightbox';
+import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 var images = [
@@ -277,16 +278,13 @@ const Taskly = React.createClass({
               <h3>
                 Final product design
               </h3>
+
+              <p>
+                <a href="#" className="">View mobile prototype</a>
+              </p>
             </div>
 
-            <div className="nav-arrows">
-              <Link to={'kashflow'} className="nav-arrow nav-arrow__prev">
-                ← Prev
-              </Link>
-              <Link to={'ux-ui-design'} className="nav-arrow nav-arrow__next">
-                Next →
-              </Link>
-            </div>
+            <Navigation prev="kashflow" next="ux-ui-design" />
           </div>
           <Footer />
         </div>

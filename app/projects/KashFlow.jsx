@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 const KashFlow = React.createClass({
@@ -30,14 +31,7 @@ const KashFlow = React.createClass({
               </p>
             </div>
 
-            <div className="nav-arrows">
-              <Link to={'ux-ui-design'} className="nav-arrow nav-arrow__prev">
-                Prev
-              </Link>
-              <Link to={'taskly'} className="nav-arrow nav-arrow__next">
-                Next
-              </Link>
-            </div>
+            <Navigation prev="ux-ui-design" next="taskly" />
           </div>
           <Footer />
         </div>
