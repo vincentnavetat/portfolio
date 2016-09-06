@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import App from './App';
-import Home from './Home';
+import Home from './components/Home';
 import Taskly from './projects/Taskly';
 import UXUIDesign from './projects/UXUIDesign';
 import KashFlow from './projects/KashFlow';

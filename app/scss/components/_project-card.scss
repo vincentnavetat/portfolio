@@ -1,8 +1,11 @@
 .project-cards {
-
+  margin-top: 3rem;
 }
 
 .project-card {
+  display: block;
+  margin-bottom: 3rem;
+
   &:hover {
     .project-card__name {
       display: block;

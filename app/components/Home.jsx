@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import Footer from './components/Footer';
+import Footer from './Footer';
 
 const Home = React.createClass({
   propTypes: {
@@ -11,6 +11,8 @@ const Home = React.createClass({
     return (
       <div className="page-wrapper">
         <div className="page-content" style={this.props.style}>
+          <h1>Selected Projects</h1>
+
           <div className="project-cards">
             <Link to={'taskly'} className="project-card">
               <h2 className="project-card__name">Taskly</h2>
