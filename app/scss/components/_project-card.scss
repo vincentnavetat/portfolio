@@ -7,8 +7,13 @@
   height: 58.5rem;
   margin-bottom: 3rem;
   overflow: hidden;
+  position: relative;
 
   &:hover {
+    .project-card__overlay-background {
+      opacity: .2;
+    }
+
     .project-card__name {
       opacity: 1;
       transform: translate(1rem, 0);
@@ -20,12 +25,26 @@
   }
 }
 
-.project-card__overlay,
+.project-card__overlay-background {
+  background: $pale-sky;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.project-card__overlay-background,
+.project-card__overlay-text,
 .project-card__image {
   transition: all .3s ease-out;
 }
 
-.project-card__overlay {
+.project-card__overlay-text {
   color: $white;
   opacity: 0;
   position: absolute;
