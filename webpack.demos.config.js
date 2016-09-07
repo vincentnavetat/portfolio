@@ -2,7 +2,6 @@
 
 var path = require('path');
 var app = path.join(__dirname, 'app');
-var autoprefixer = require('autoprefixer');
 
 module.exports = {
   devtool: 'eval-source-map',
@@ -24,17 +23,10 @@ module.exports = {
         loaders: ['style', 'css', 'sass']
       },
       {
-        test:   /\.css$/,
-        loader: 'style-loader!css-loader!postcss-loader'
-      },
-      {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loader: 'url?limit=10000!img?progressive=true'
       }
     ]
-  },
-  postcss: function () {
-    return [autoprefixer];
   },
   resolve: {
     extensions: ['', '.js', '.jsx']

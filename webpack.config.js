@@ -3,6 +3,8 @@
 var webpack = require('webpack');
 var path = require('path');
 var app = path.join(__dirname, 'app');
+var autoprefixer = require('autoprefixer');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   devtool: 'sourcemap',
@@ -22,7 +24,7 @@ module.exports = {
     },
     {
       test: /\.scss$/,
-      loaders: ["style", "css", "sass"]
+      loader: ExtractTextPlugin.extract('style', 'css!sass')
     },
     {
       test: /\.(jpe?g|png|gif|svg)$/i,
@@ -46,6 +48,7 @@ module.exports = {
         'NODE_ENV': JSON.stringify('production'),
       }
     }),
-    new webpack.optimize.UglifyJsPlugin()
+    new webpack.optimize.UglifyJsPlugin(),
+    new ExtractTextPlugin('styles.css')
   ]
 };

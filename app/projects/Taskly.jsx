@@ -287,7 +287,7 @@ const Taskly = React.createClass({
               </h3>
 
               <p className="text-center">
-                <a href="#" className="btn">View mobile prototype</a>
+                <a href="https://xd.adobe.com/view/3407161d-d084-400b-4519-c846437a2a9e/" target="_blank" className="btn">View mobile prototype</a>
               </p>
             </div>
           </div>
