@@ -24,12 +24,15 @@ module.exports = {
     },
     {
       test: /\.scss$/,
-      loader: ExtractTextPlugin.extract('style', 'css!sass')
+      loader: ExtractTextPlugin.extract('style', 'css!postcss-loader!sass')
     },
     {
       test: /\.(jpe?g|png|gif|svg)$/i,
       loader: 'url?limit=10000!img?progressive=true'
     }]
+  },
+  postcss: function () {
+    return [autoprefixer];
   },
   resolve: {
     root: app,
