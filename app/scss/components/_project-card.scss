@@ -20,12 +20,12 @@
   }
 }
 
-.project-card__name,
+.project-card__overlay,
 .project-card__image {
   transition: all .3s ease-out;
 }
 
-.project-card__name {
+.project-card__overlay {
   color: $white;
   opacity: 0;
   position: absolute;
