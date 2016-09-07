@@ -4,8 +4,8 @@
 
 .project-card {
   display: block;
-  height: 58.5rem;
   margin-bottom: 3rem;
+  max-height: 58.5rem;
   overflow: hidden;
   position: relative;
 
@@ -14,7 +14,11 @@
       opacity: .2;
     }
 
-    .project-card__name {
+    .project-card__overlay-line {
+      width: 10rem;
+    }
+
+    .project-card__overlay-text {
       opacity: 1;
       transform: translate(1rem, 0);
     }
@@ -38,9 +42,30 @@
   z-index: 1;
 }
 
+.project-card__overlay-line {
+  border-top: .1rem solid $white;
+  margin-top: 5rem;
+  position: absolute;
+  transition: width .2s ease-in;
+  width: 0;
+  z-index: 1;
+}
+
 .project-card__overlay-background,
-.project-card__overlay-text,
 .project-card__image {
+  transition: all .3s ease-out;
+}
+
+.project-card__name {
+  transition: all .3s ease-out;
+  transition-delay: .1s;
+}
+
+.project-card__description {
+  transition: all .3s ease-out;
+}
+
+.project-card__skillset {
   transition: all .3s ease-out;
 }
 

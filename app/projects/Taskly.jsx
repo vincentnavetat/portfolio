@@ -86,14 +86,15 @@ const Taskly = React.createClass({
             </div>
 
             <div className="project-view-summary">
+              <p>Taskly is an app I have designed as part of the UX Design course from CarreerFoundry, I lead all the steps of the project from market research to interface design.</p>
               <p>
-                Taskly, a new start-up, is looking to gain a presence amongst the project management software industry. In order to be unique and separate themselves from the competition, they aim to create a simplified and streamlined version of project management apps like Asana and Basecamp. By creating and perfecting only the features most important to the user and essential to project management, Taskly aims to be both efficient and easy to use.
+                The start-up Taskly aims at proposing a new take on project management apps. Their goal is to create a simple and seamless experience for teams to collaborate in the creative and technology industries.
               </p>
               <h3>
                 Competitive research
               </h3>
               <p>
-                First, I looked into what other companies in the project management software field were up to–where they succeeded, where they failed, what they offered–and how to do it better.
+                First, I analysed the main companies in the project management software field: Basecamp, Asana and Trello: what they offer, their limits and what opportunities are there for Taskly.
               </p>
               <h3>
                 User research

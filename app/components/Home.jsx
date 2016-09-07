@@ -15,6 +15,7 @@ const Home = React.createClass({
           <div className="project-cards">
             <Link to={'taskly'} className="project-card">
               <div className="project-card__overlay-background"></div>
+              <div className="project-card__overlay-line"></div>
               <h2 className="project-card__overlay-text project-card__name">Taskly</h2>
               <p className="project-card__overlay-text project-card__description">Project Management App Concept and Design</p>
               <p className="project-card__overlay-text project-card__skillset">UX/UI Design</p>
@@ -22,6 +23,7 @@ const Home = React.createClass({
             </Link>
             <Link to={'ux-ui-design'} className="project-card">
               <div className="project-card__overlay-background"></div>
+              <div className="project-card__overlay-line"></div>
               <h2 className="project-card__overlay-text project-card__name">UX/UI Design</h2>
               <p className="project-card__overlay-text project-card__description">Mobile Apps Design</p>
               <p className="project-card__overlay-text project-card__skillset">UX/UI Design</p>
@@ -29,6 +31,7 @@ const Home = React.createClass({
             </Link>
             <Link to={'kashflow'} className="project-card">
               <div className="project-card__overlay-background"></div>
+              <div className="project-card__overlay-line"></div>
               <h2 className="project-card__overlay-text project-card__name">KashFlow</h2>
               <p className="project-card__overlay-text project-card__description">Accounting Software Website</p>
               <p className="project-card__overlay-text project-card__skillset">Web Development</p>
