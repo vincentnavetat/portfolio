@@ -169,57 +169,74 @@ const Taskly = React.createClass({
               </p>
 
               <Slider {...sliderSettings}>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-01-dashboard.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-02-navigation.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-03-new-project.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-04-project-setup.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-05-project-menu.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-06-new-task.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-07-task.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-08-project.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-09-sprint.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-10-team-member.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-11-conversations.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-12-new-conversation.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-13-conversation.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-14-new-conversation.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-15-files.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-16-new-files.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="../medias/taskly/paper-prototype-17-file-history.jpg" alt="" />
-                </div>
+                <figure>
+                  <figcaption>Dashboard</figcaption>
+                  <img src="../medias/taskly/paper-prototype-01-dashboard.jpg" alt="Taskly's paper prototype - Dashboard" />
+                </figure>
+                <figure>
+                  <figcaption>Navigation Dropdowns</figcaption>
+                  <img src="../medias/taskly/paper-prototype-02-navigation.jpg" alt="Taskly's paper prototype - Navigation Dropdowns" />
+                </figure>
+                <figure>
+                  <figcaption>Create a New Project</figcaption>
+                  <img src="../medias/taskly/paper-prototype-03-create-new-project.jpg" alt="Taskly's paper prototype - Create a New Project" />
+                </figure>
+                <figure>
+                  <figcaption>New Project</figcaption>
+                  <img src="../medias/taskly/paper-prototype-04-new-project.jpg" alt="Taskly's paper prototype - New Project" />
+                </figure>
+                <figure>
+                  <figcaption>Project Menu</figcaption>
+                  <img src="../medias/taskly/paper-prototype-05-project-menu.jpg" alt="Taskly's paper prototype - Project Menu" />
+                </figure>
+                <figure>
+                  <figcaption>Create a New Task</figcaption>
+                  <img src="../medias/taskly/paper-prototype-06-create-new-task.jpg" alt="Taskly's paper prototype - Create a New Task" />
+                </figure>
+                <figure>
+                  <figcaption>Task</figcaption>
+                  <img src="../medias/taskly/paper-prototype-07-task.jpg" alt="Taskly's paper prototype - Task" />
+                </figure>
+                <figure>
+                  <figcaption>Project</figcaption>
+                  <img src="../medias/taskly/paper-prototype-08-project.jpg" alt="Taskly's paper prototype - Project" />
+                </figure>
+                <figure>
+                  <figcaption>Project Sprint</figcaption>
+                  <img src="../medias/taskly/paper-prototype-09-sprint.jpg" alt="Taskly's paper prototype - Project Sprint" />
+                </figure>
+                <figure>
+                  <figcaption>Task's Team Member</figcaption>
+                  <img src="../medias/taskly/paper-prototype-10-team-member.jpg" alt="Taskly's paper prototype - Task's Team Member" />
+                </figure>
+                <figure>
+                  <figcaption>Conversations</figcaption>
+                  <img src="../medias/taskly/paper-prototype-11-conversations.jpg" alt="Taskly's paper prototype - Conversations" />
+                </figure>
+                <figure>
+                  <figcaption>Create a Conversation</figcaption>
+                  <img src="../medias/taskly/paper-prototype-12-create-new-conversation.jpg" alt="Taskly's paper prototype - Create a Conversation" />
+                </figure>
+                <figure>
+                  <figcaption>New Conversation</figcaption>
+                  <img src="../medias/taskly/paper-prototype-13-new-conversation.jpg" alt="Taskly's paper prototype - New Conversation" />
+                </figure>
+                <figure>
+                  <figcaption>Conversation</figcaption>
+                  <img src="../medias/taskly/paper-prototype-14-conversation.jpg" alt="Taskly's paper prototype - Conversation" />
+                </figure>
+                <figure>
+                  <figcaption>Dashboard</figcaption>
+                  <img src="../medias/taskly/paper-prototype-15-files.jpg" alt="Taskly's paper prototype - " />
+                </figure>
+                <figure>
+                  <figcaption>Dashboard</figcaption>
+                  <img src="../medias/taskly/paper-prototype-16-new-files.jpg" alt="Taskly's paper prototype - " />
+                </figure>
+                <figure>
+                  <figcaption>Dashboard</figcaption>
+                  <img src="../medias/taskly/paper-prototype-17-file-history.jpg" alt="Taskly's paper prototype - " />
+                </figure>
               </Slider>
 
               <h3>
