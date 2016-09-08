@@ -5,7 +5,32 @@
   font-size: $font-size-base-plus;
   font-weight: $weight-m;
   letter-spacing: .1rem;
-  padding: .5rem 3rem .5rem;
+  overflow: hidden;
+  padding: .5rem 3rem;
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
+  transition: .3s;
+
+  &::after {
+    background: $pelorous;
+    bottom: 0;
+    content: '';
+    height: 120%;
+    left: -10%;
+    position: absolute;
+    transform: skewX(15deg);
+    transition: .3s;
+    width: 0;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $white;
+
+    &::after {
+      left: -10%;
+      width: 120%;
+    }
+  }
 }

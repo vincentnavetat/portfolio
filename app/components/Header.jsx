@@ -13,8 +13,8 @@ const Header = React.createClass({
             </Link>
           </div>
           <div className="header__side header__side--right text-right">
-            <Link to="/" key="home" className="header__link">About</Link>
-            <a href="#" className="btn">Download CV</a>
+            {/*<Link to="/" key="home" className="header__link">About</Link>*/}
+            <a href="#" className="btn">Résumé</a>
           </div>
         </div>
       </header>

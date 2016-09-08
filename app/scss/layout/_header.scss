@@ -16,7 +16,13 @@
   @include span-columns(6);
 }
 
+.header__side--left {
+  padding-left: 1rem;
+}
+
 .header__side--right {
+  padding-right: 1rem;
+
   .header__link {
     margin-right: 3rem;
   }
