@@ -90,21 +90,21 @@ const Taskly = React.createClass({
               <p>
                 The start-up Taskly aims at proposing a new take on project management apps. Their goal is to create a simple and seamless experience for teams to collaborate in the creative and technology industries.
               </p>
-              <h3>
+              <h2>
                 Competitive research
-              </h3>
+              </h2>
               <p>
                 First, I analysed the main companies in the project management software field: Basecamp, Asana and Trello: what they offer, their limits and what opportunities are there for Taskly.
               </p>
-              <h3>
+              <h2>
                 User research
-              </h3>
+              </h2>
               <p>
                 Then I was onto the most important UX commandment: know thy user. Combined with the competitive analysis, I used insight from surveys and interviews to make a decision on the essential features of Taskly. Besides being simple and intuitive, there seemed to be a real need for project management software that acted as a central team communication hub and helped prioritize user tasks.
               </p>
-              <h3>
+              <h2>
                 User personas
-              </h3>
+              </h2>
               <p>
                 In order to target specific user needs, I broke down the type of users into three categories:
                 Busy Individuals (freelancers), People in Power (team leaders), and Team Members (employees that collaborate with others).
@@ -127,43 +127,43 @@ const Taskly = React.createClass({
 
               {lightbox}
 
-              <h3>
+              <h2>
                 Customer experience map
-              </h3>
+              </h2>
 
               <img src="../medias/taskly/customer-experience-map.png" alt="Customer Experience Map for Taskly" />
 
-              <h3>
+              <h2>
                 Task Model
-              </h3>
+              </h2>
 
               <img src="../medias/taskly/task-model.png" alt="Task Model for Taskly" />
 
-              <h3>
+              <h2>
                 Site map
-              </h3>
+              </h2>
 
-              <h4>
+              <h3>
                 Corporate Website
-              </h4>
+              </h3>
               <img src="../medias/taskly/sitemap-corporate.png" alt="" />
 
-              <h4>
+              <h3>
                 App / General
-              </h4>
+              </h3>
               <img src="../medias/taskly/sitemap-general.png" alt="" />
 
-              <h4>
+              <h3>
                 App / Projects
-              </h4>
+              </h3>
               <img src="../medias/taskly/sitemap-projects.png" alt="" />
 
               <p>
                 After completing a card sorting exercise and full content audits on competitors, I was able to organize the essential Taskly features into a site map based on those findings.
               </p>
-              <h3>
+              <h2>
                 Sketches
-              </h3>
+              </h2>
               <p>
                 I always begin the design process with sketching to move quickly through my ideas and have a chance to test them before moving to the computer.
               </p>
@@ -239,9 +239,9 @@ const Taskly = React.createClass({
                 </figure>
               </Slider>
 
-              <h3>
+              <h2>
                 Wireframes
-              </h3>
+              </h2>
               <p>
                 After initial usability testing on the sketches, I move onto wireframes to outline the layout of the application without worrying about the aesthetic design. This way I can keep testing my ideas on potential users to continually improve the product without wasting time tweaking colors and drop shadows.
               </p>
@@ -305,15 +305,15 @@ const Taskly = React.createClass({
                 </figure>
               </Slider>
 
-              <h3>
+              <h2>
                 UI Design
-              </h3>
+              </h2>
 
               <img src="../medias/taskly/ui-demo.jpg" alt="" />
 
-              <h3>
+              <h2>
                 Final product design
-              </h3>
+              </h2>
 
               <p className="text-center">
                 <a href="https://xd.adobe.com/view/3407161d-d084-400b-4519-c846437a2a9e/" target="_blank" className="btn">View mobile prototype</a>

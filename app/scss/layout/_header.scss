@@ -1,13 +1,33 @@
 .header {
   background: $alabaster;
   border-bottom: .1rem solid $athens-gray;
+  font-size: $font-size-base;
+  height: 7rem;
+  line-height: 2.2rem;
   opacity: .95;
-  padding: 2rem 0;
+  padding-top: 1.5rem;
   position: fixed;
+  text-transform: uppercase;
   width: 100%;
   z-index: 2;
 }
 
+.header__side {
+  @include span-columns(6);
+}
+
+.header__side--right {
+  .header__link {
+    margin-right: 3rem;
+  }
+}
+
 .header__link {
+  color: $shark;
   text-decoration: none;
+}
+
+.header__description {
+  color: $pale-sky;
+  display: block;
 }

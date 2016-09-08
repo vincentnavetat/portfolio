@@ -2,6 +2,12 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  color: $pale-sky;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: $font-size-base-plus;
+}
+
 img {
   max-width: 100%;
 }

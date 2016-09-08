@@ -1,10 +1,12 @@
 .slick-slide {
   figcaption {
-    background: rgba($shark, .6);
+    background: rgba($pale-sky, .8);
+    border-radius: .5rem;
     color: $white;
     display: inline-block;
+    font-weight: $weight-s;
     height: 3rem;
-    line-height: 3.6rem;
+    line-height: 3rem;
     margin: 1.5rem 0 0 1.5rem;
     padding: 0 1rem;
     position: absolute;

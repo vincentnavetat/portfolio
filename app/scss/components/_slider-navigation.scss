@@ -1,5 +1,6 @@
 .slick-arrow {
   height: 6rem;
+  opacity: .7;
   width: 4rem;
   z-index: 1;
 
@@ -8,6 +9,10 @@
     display: block;
     height: 6rem;
     width: 4rem;
+  }
+
+  &:hover {
+    opacity: 1;
   }
 }
 
