@@ -5,6 +5,7 @@
 .footer__social-networks {
   list-style-type: none;
   margin-bottom: 3rem;
+  padding-left: 0;
 }
 
 .social-network {
@@ -12,7 +13,6 @@
 }
 
 .social-network__link {
-  background: $pelorous;
   border-radius: 1.5rem;
   display: inline-block;
   height: 3rem;
@@ -26,9 +26,15 @@
   }
 
   svg {
-    fill: $white;
+    fill: $pelorous;
     height: 1.7rem;
     width: 1.7rem;
+  }
+}
+
+.social-network__link--linkedin {
+  svg {
+    width: 1.5rem;
   }
 }
 

@@ -110,7 +110,7 @@ const Taskly = React.createClass({
                 Busy Individuals (freelancers), People in Power (team leaders), and Team Members (employees that collaborate with others).
               </p>
 
-              <div>
+              <div className="personas">
                 <a className="persona" onClick={() => this.openLightbox(0)} href="javascript:void(0)">
                   <div className="persona__overlay"></div>
                   <img src="../medias/taskly/persona-designer.jpg" alt="" />

@@ -1,3 +1,7 @@
+.personas {
+  @include outer-container;
+}
+
 .persona {
   @include span-columns(4);
   height: 39.5rem;
