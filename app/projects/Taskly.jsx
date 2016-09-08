@@ -111,21 +111,18 @@ const Taskly = React.createClass({
               </p>
 
               <div>
-                <div className="persona">
-                  <a onClick={() => this.openLightbox(0)} href="javascript:void(0)">
-                    <img src="../medias/taskly/persona-designer.jpg" alt="" />
-                  </a>
-                </div>
-                <div className="persona">
-                  <a onClick={() => this.openLightbox(1)} href="javascript:void(0)">
-                    <img src="../medias/taskly/persona-entrepreneur.jpg" alt="" />
-                  </a>
-                </div>
-                <div className="persona">
-                  <a onClick={() => this.openLightbox(2)} href="javascript:void(0)">
-                    <img src="../medias/taskly/persona-project-manager.jpg" alt="" />
-                  </a>
-                </div>
+                <a className="persona" onClick={() => this.openLightbox(0)} href="javascript:void(0)">
+                  <div className="persona__overlay"></div>
+                  <img src="../medias/taskly/persona-designer.jpg" alt="" />
+                </a>
+                <a className="persona" onClick={() => this.openLightbox(1)} href="javascript:void(0)">
+                  <div className="persona__overlay"></div>
+                  <img src="../medias/taskly/persona-entrepreneur.jpg" alt="" />
+                </a>
+                <a className="persona" onClick={() => this.openLightbox(2)} href="javascript:void(0)">
+                  <div className="persona__overlay"></div>
+                  <img src="../medias/taskly/persona-project-manager.jpg" alt="" />
+                </a>
               </div>
 
               {lightbox}
