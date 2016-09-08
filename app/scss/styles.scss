@@ -1,5 +1,6 @@
 @import './vendor/normalize';
 @import './vendor/neat/neat';
+@import './vendor/slick-slider';
 
 @import './helpers/variables';
 
@@ -12,8 +13,8 @@
 @import './layout/header';
 @import './layout/footer';
 
-@import './components/slider';
-@import './components/slider-custom';
+@import './components/slider-navigation';
+@import './components/slider-slide';
 @import './components/navigation-arrows';
 @import './components/project-card';
 @import './components/project-view';
