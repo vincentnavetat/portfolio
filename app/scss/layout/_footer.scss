@@ -10,13 +10,19 @@
 
 .social-network {
   display: inline;
+
+  &:not(:first-child) {
+    .social-network__link {
+      margin-left: 1rem;
+    }
+  }
 }
 
 .social-network__link {
   border-radius: 1.5rem;
   display: inline-block;
   height: 3rem;
-  margin-left: 1rem;
+
   padding-top: .6rem;
   transition: box-shadow .2s cubic-bezier(.2, 0, .7, 1);
   width: 3rem;
@@ -41,4 +47,12 @@
 .footer__credits {
   color: $heather;
   font-weight: $weight-s;
+
+  svg {
+    height: 1.7rem;
+  }
+}
+
+.footer__text {
+  vertical-align: 10%;
 }
