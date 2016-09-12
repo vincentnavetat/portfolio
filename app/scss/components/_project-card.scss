@@ -9,36 +9,40 @@
   overflow: hidden;
   position: relative;
 
-  &:hover {
-    .project-card__overlay-background {
-      opacity: .4;
-    }
+  @include media($tablet) {
+    &:hover {
+      .project-card__overlay-background {
+        opacity: .4;
+      }
 
-    .project-card__overlay-line {
-      width: 6%;
-    }
+      .project-card__overlay-line {
+        width: 6%;
+      }
 
-    .project-card__overlay-text {
-      opacity: 1;
-      transform: translate(1rem, 0);
-    }
+      .project-card__overlay-text {
+        opacity: 1;
+        transform: translate(1rem, 0);
+      }
 
-    .project-card__image {
-      transform: scale(1.05);
-      transition: transform 3s linear; // transition in
+      .project-card__image {
+        transform: scale(1.05);
+        transition: transform 3s linear; // transition in
+      }
     }
   }
 }
+
 
 .project-card__overlay-background {
   background: $shark;
   bottom: 0;
   height: 100%;
   left: 0;
-  opacity: 0;
+  opacity: .5;
   position: absolute;
   right: 0;
   top: 0;
+  transition: opacity .3s ease-in;
   width: 100%;
   z-index: 1;
 }
@@ -58,38 +62,47 @@
   color: $white;
   left: 3%;
   margin-top: 0;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   z-index: 1;
 }
 
-.project-card__overlay-background {
-  transition: opacity .3s ease-in;
+.project-card__overlay-background,
+.project-card__overlay-text {
+  @include media($tablet) {
+    opacity: 0;
+  }
 }
 
 .project-card__image {
   transition: transform .3s linear; // transition out
+  width: 100%;
+}
+
+.project-card__skillset,
+.project-card__description {
+  font-size: $font-size-base-plus;
+  font-weight: $weight-s;
 }
 
 .project-card__skillset {
   top: 17%;
-  transition: all .3s ease-out;
+  transition: transform .3s ease-out, opacity .3s ease-out;
 }
 
 .project-card__description {
   top: 21%;
-  transition: all .3s ease-out;
+  transition: transform .3s ease-out, opacity .3s ease-out;
   transition-delay: .1s;
 }
 
 .project-card__name {
-  font-size: $font-size-l;
-  line-height: $font-size-l;
   top: 28%;
-  transition: all .3s ease-out;
+  transition: transform .3s ease-out, opacity .3s ease-out;
   transition-delay: .2s;
-}
 
-.project-card__image {
-  width: 100%;
+  @include media($tablet) {
+    font-size: $font-size-l;
+    line-height: $font-size-l;
+  }
 }
