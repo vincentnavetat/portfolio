@@ -15,7 +15,7 @@
     }
 
     .project-card__overlay-line {
-      width: 10rem;
+      width: 6%;
     }
 
     .project-card__overlay-text {
@@ -25,6 +25,7 @@
 
     .project-card__image {
       transform: scale(1.05);
+      transition: transform 3s linear; // transition in
     }
   }
 }
@@ -44,41 +45,47 @@
 
 .project-card__overlay-line {
   border-top: .1rem solid $white;
-  left: 4rem;
+  left: 3%;
+  margin-left: 1rem;
   position: absolute;
-  top: 7rem;
-  transition: width .2s ease-in;
+  top: 16%;
+  transition: width .2s ease-out;
   width: 0;
   z-index: 1;
 }
 
 .project-card__overlay-text {
   color: $white;
-  left: 3rem;
+  left: 3%;
+  margin-top: 0;
   opacity: 0;
   position: absolute;
-  top: 9rem;
   z-index: 1;
 }
 
-.project-card__overlay-background,
+.project-card__overlay-background {
+  transition: opacity .3s ease-in;
+}
+
 .project-card__image {
-  transition: all .3s ease-out;
+  transition: transform .3s linear; // transition out
 }
 
 .project-card__skillset {
+  top: 17%;
   transition: all .3s ease-out;
 }
 
 .project-card__description {
-  margin-top: 4rem;
+  top: 21%;
   transition: all .3s ease-out;
   transition-delay: .1s;
 }
 
 .project-card__name {
   font-size: $font-size-l;
-  margin-top: 7rem;
+  line-height: $font-size-l;
+  top: 28%;
   transition: all .3s ease-out;
   transition-delay: .2s;
 }
