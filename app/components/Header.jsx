@@ -9,7 +9,9 @@ const Header = React.createClass({
           <div className="header__side header__side--left">
             <Link to="/" key="home" className="header__link">
               Vincent Navetat
-              <span className="header__description">UX Design, Front-End Development</span>
+              <span className="header__description">
+                UX Design, Front-End Development
+              </span>
             </Link>
           </div>
           <div className="header__side header__side--right text-right">

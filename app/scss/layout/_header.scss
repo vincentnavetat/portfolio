@@ -35,5 +35,9 @@
 
 .header__description {
   color: $pale-sky;
-  display: block;
+  display: none;
+
+  @include media($mobile) {
+    display: block;
+  }
 }

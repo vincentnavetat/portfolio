@@ -34,16 +34,20 @@
 
 .project-card__overlay-background {
   background: $shark;
-  bottom: 0;
-  height: 100%;
-  left: 0;
+  height: 25%;
   opacity: .5;
   position: absolute;
-  right: 0;
   top: 0;
-  transition: opacity .3s ease-in;
   width: 100%;
-  z-index: 1;
+
+  @include media($tablet) {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    right: 0;
+    transition: opacity .3s ease-in;
+    z-index: 1;
+  }
 }
 
 .project-card__overlay-line {
@@ -61,8 +65,11 @@
   color: $white;
   left: 3%;
   position: absolute;
-  top: 17%;
   z-index: 1;
+
+  @include media($tablet) {
+    top: 17%;
+  }
 }
 
 .project-card__overlay-text {
@@ -87,6 +94,16 @@
   font-weight: $weight-s;
   margin-bottom: .5rem;
   margin-top: .5rem;
+}
+
+.project-card__skillset,
+.project-card__description,
+.project-card__overlay-line {
+  display: none;
+
+  @include media($tablet) {
+    display: block;
+  }
 }
 
 .project-card__skillset,
