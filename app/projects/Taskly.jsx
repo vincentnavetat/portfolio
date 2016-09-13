@@ -86,10 +86,16 @@ const Taskly = React.createClass({
             </div>
 
             <div className="project-view-summary">
-              <p>Taskly is an app I have designed as part of the UX Design course from CarreerFoundry, I lead all the steps of the project from market research to interface design.</p>
+              <p>
+                Taskly is an app I have designed as part of the UX Design course from CareerFoundry, I lead all the steps of the project from market research to interface design.
+              </p>
               <p>
                 The start-up Taskly aims at proposing a new take on project management apps. Their goal is to create a simple and seamless experience for teams to collaborate in the creative and technology industries.
               </p>
+              <p>
+                <a href="https://xd.adobe.com/view/3407161d-d084-400b-4519-c846437a2a9e/" target="_blank" className="btn">View mobile prototype</a>
+              </p>
+
               <h2>
                 Competitive research
               </h2>
@@ -100,14 +106,14 @@ const Taskly = React.createClass({
                 User research
               </h2>
               <p>
-                Then I was onto the most important UX commandment: know thy user. Combined with the competitive analysis, I used insight from surveys and interviews to make a decision on the essential features of Taskly. Besides being simple and intuitive, there seemed to be a real need for project management software that acted as a central team communication hub and helped prioritize user tasks.
+                Based on surveys and interviews, I could make a decision on the mostal valuable features for Taskly.
+                It seemed that potential users had the most issues with consolidating information from different modes of communication, as well as juggling multiple projects at the same time.
               </p>
               <h2>
                 User personas
               </h2>
               <p>
-                In order to target specific user needs, I broke down the type of users into three categories:
-                Busy Individuals (freelancers), People in Power (team leaders), and Team Members (employees that collaborate with others).
+                In order to target specific user needs, I set up 3 different personas: the Creative Employee, the Entrepreneur and the Manager.
               </p>
 
               <div className="personas">
@@ -128,20 +134,32 @@ const Taskly = React.createClass({
               {lightbox}
 
               <h2>
-                Customer experience map
+                Task Model
               </h2>
+
+              <p>
+                After defining the features contained in the Most Viable Product for Taskly, I designed a Task for the Project Setup:
+              </p>
 
               <img src="../medias/taskly/customer-experience-map.png" alt="Customer Experience Map for Taskly" />
 
               <h2>
-                Task Model
+                Customer experience map
               </h2>
+
+              <p>
+                Based on the Manager persona, I designed a Customer Experience Map which helped me going though all the steps of a project and have a clear understanding of all the processes involved.
+              </p>
 
               <img src="../medias/taskly/task-model.png" alt="Task Model for Taskly" />
 
               <h2>
                 Site map
               </h2>
+
+              <p>
+                After completing a card sorting exercise and content audits on competitors, I was able to organise the Taskly's MVP features into a site map.
+              </p>
 
               <h3>
                 Corporate Website
@@ -158,14 +176,13 @@ const Taskly = React.createClass({
               </h3>
               <img src="../medias/taskly/sitemap-projects.png" alt="" />
 
-              <p>
-                After completing a card sorting exercise and full content audits on competitors, I was able to organize the essential Taskly features into a site map based on those findings.
-              </p>
               <h2>
                 Sketches
               </h2>
               <p>
-                I always begin the design process with sketching to move quickly through my ideas and have a chance to test them before moving to the computer.
+                Having the sitemap defined help me creating the first prototype on paper.
+                Sketching was the best way to define my initial vision of the app and be able to create a first round of usability testing.
+                By showing the screens on paper to a user, I can quickly verify my assumptions and make adjustments without having invested too much time building wireframes.
               </p>
 
               <Slider {...sliderSettings}>
@@ -243,64 +260,65 @@ const Taskly = React.createClass({
                 Wireframes
               </h2>
               <p>
-                After initial usability testing on the sketches, I move onto wireframes to outline the layout of the application without worrying about the aesthetic design. This way I can keep testing my ideas on potential users to continually improve the product without wasting time tweaking colors and drop shadows.
+                Based on the paper prototype and initial user testing, I created wireframes for mobile, tablet and desktop devices on UXPin. This allowed me to create interactive prototypes that I used for a second set of user testing.
+                By using an interactive prototype, I could get a more accurate evaludation of the usability of the app. Testers could navigate autonomously throughout the app to achieve pre-defined goals. I could observe their behavoirs and make the right adjustments afterwards.
               </p>
 
               <Slider {...sliderSettings}>
                 <figure>
-                  <figcaption>Mobile Login</figcaption>
+                  <figcaption>Mobile - Login</figcaption>
                   <img src="../medias/taskly/wireframes-mobile-01-login.png" alt="Taskly's Wireframes - Mobile Login" />
                 </figure>
                 <figure>
-                  <figcaption>Mobile Navigation</figcaption>
+                  <figcaption>Mobile - Navigation</figcaption>
                   <img src="../medias/taskly/wireframes-mobile-02-navigation.png" alt="Taskly's Wireframes - Mobile Navigation" />
                 </figure>
                 <figure>
-                  <figcaption>Mobile New Project</figcaption>
+                  <figcaption>Mobile - New Project</figcaption>
                   <img src="../medias/taskly/wireframes-mobile-03-new-project.png" alt="Taskly's Wireframes - Mobile New Project" />
                 </figure>
                 <figure>
-                  <figcaption>Mobile New Task</figcaption>
+                  <figcaption>Mobile - New Task</figcaption>
                   <img src="../medias/taskly/wireframes-mobile-04-new-task.png" alt="Taskly's Wireframes - Mobile New Task" />
                 </figure>
                 <figure>
-                  <figcaption>Mobile New File</figcaption>
+                  <figcaption>Mobile - New File</figcaption>
                   <img src="../medias/taskly/wireframes-mobile-05-new-file.png" alt="Taskly's Wireframes - Mobile New File" />
                 </figure>
                 <figure>
-                  <figcaption>Mobile Add a Team Member</figcaption>
+                  <figcaption>Mobile - Add a Team Member</figcaption>
                   <img src="../medias/taskly/wireframes-mobile-06-add-team-member.png" alt="Taskly's Wireframes - Mobile Add a Team Member" />
                 </figure>
                 <figure>
-                  <figcaption>Tablet Navigation</figcaption>
+                  <figcaption>Tablet - Navigation</figcaption>
                   <img src="../medias/taskly/wireframes-tablet-01-navigation.png" alt="Taskly's Wireframes - Tablet Navigation" />
                 </figure>
                 <figure>
-                  <figcaption>Tablet New Project</figcaption>
+                  <figcaption>Tablet - New Project</figcaption>
                   <img src="../medias/taskly/wireframes-tablet-02-new-project.png" alt="Taskly's Wireframes - Tablet New Project" />
                 </figure>
                 <figure>
-                  <figcaption>Tablet New Task</figcaption>
+                  <figcaption>Tablet - New Task</figcaption>
                   <img src="../medias/taskly/wireframes-tablet-03-new-task.png" alt="Taskly's Wireframes - Tablet New Task" />
                 </figure>
                 <figure>
-                  <figcaption>Tablet New File</figcaption>
+                  <figcaption>Tablet - New File</figcaption>
                   <img src="../medias/taskly/wireframes-tablet-04-new-file.png" alt="Taskly's Wireframes - Tablet New File" />
                 </figure>
                 <figure>
-                  <figcaption>Desktop Navigation</figcaption>
+                  <figcaption>Desktop - Navigation</figcaption>
                   <img src="../medias/taskly/wireframes-desktop-01-navigation.png" alt="Taskly's Wireframes - Desktop Navigation" />
                 </figure>
                 <figure>
-                  <figcaption>Desktop New Project</figcaption>
+                  <figcaption>Desktop - New Project</figcaption>
                   <img src="../medias/taskly/wireframes-desktop-02-new-project.png" alt="Taskly's Wireframes - Desktop New Project" />
                 </figure>
                 <figure>
-                  <figcaption>Desktop New Task</figcaption>
+                  <figcaption>Desktop - New Task</figcaption>
                   <img src="../medias/taskly/wireframes-desktop-03-new-task.png" alt="Taskly's Wireframes - Desktop New Task" />
                 </figure>
                 <figure>
-                  <figcaption>Desktop New File</figcaption>
+                  <figcaption>Desktop - New File</figcaption>
                   <img src="../medias/taskly/wireframes-desktop-04-new-file.png" alt="Taskly's Wireframes - Desktop New File" />
                 </figure>
               </Slider>
@@ -309,11 +327,11 @@ const Taskly = React.createClass({
                 UI Design
               </h2>
 
-              <img src="../medias/taskly/ui-demo.jpg" alt="" />
+              <p>
+                I finally designed the User Interface for each screen of the mobile app, based on the wireframes. It resulted in the creation of a final prototype.
+              </p>
 
-              <h2>
-                Final product design
-              </h2>
+              <img src="../medias/taskly/ui-demo.jpg" alt="" />
 
               <p className="text-center">
                 <a href="https://xd.adobe.com/view/3407161d-d084-400b-4519-c846437a2a9e/" target="_blank" className="btn">View mobile prototype</a>
