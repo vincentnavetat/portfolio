@@ -16,26 +16,50 @@ const Home = React.createClass({
             <Link to={'taskly'} className="project-card">
               <div className="project-card__overlay-background"></div>
               <div className="project-card__overlay-line"></div>
-              <p className="project-card__overlay-text project-card__skillset">UX/UI Design</p>
-              <p className="project-card__overlay-text project-card__description">Project Management App Concept and Design</p>
-              <h2 className="project-card__overlay-text project-card__name">Taskly</h2>
-              <img className="project-card__image" src="./medias/taskly/preview.jpg" alt="Taskly" />
+              <div className="project-card__overlay-content">
+                <div className="project-card__overlay-text project-card__skillset">
+                  UX/UI Design
+                </div>
+                <div className="project-card__overlay-text project-card__description">
+                  Project Management App Concept and Design
+                </div>
+                <h2 className="project-card__overlay-text project-card__name">
+                  Taskly
+                </h2>
+              </div>
+              <img className="project-card__image" src="./medias/taskly/preview.jpg" alt="Taskly"/>
             </Link>
             <Link to={'ux-ui-design'} className="project-card">
               <div className="project-card__overlay-background"></div>
               <div className="project-card__overlay-line"></div>
-              <p className="project-card__overlay-text project-card__skillset">UX/UI Design</p>
-              <p className="project-card__overlay-text project-card__description">Design Concepts and UI</p>
-              <h2 className="project-card__overlay-text project-card__name">Mobile Apps Design</h2>
-              <img className="project-card__image" src="./medias/ux-ui-design/preview.jpg" alt="UX/UI Design" />
+              <div className="project-card__overlay-content">
+                <div className="project-card__overlay-text project-card__skillset">
+                  UX/UI Design
+                </div>
+                <div className="project-card__overlay-text project-card__description">
+                  Design Concepts and UI
+                </div>
+                <h2 className="project-card__overlay-text project-card__name">
+                  Mobile Apps Design
+                </h2>
+              </div>
+              <img className="project-card__image" src="./medias/ux-ui-design/preview.jpg" alt="UX/UI Design"/>
             </Link>
             <Link to={'kashflow'} className="project-card">
               <div className="project-card__overlay-background"></div>
               <div className="project-card__overlay-line"></div>
-              <p className="project-card__overlay-text project-card__skillset">Web Development</p>
-              <p className="project-card__overlay-text project-card__description">Accounting Software Website</p>
-              <h2 className="project-card__overlay-text project-card__name">KashFlow</h2>
-              <img className="project-card__image" src="./medias/kashflow/preview.jpg" alt="KashFlow" />
+              <div className="project-card__overlay-content">
+                <div className="project-card__overlay-text project-card__skillset">
+                  Web Development
+                </div>
+                <div className="project-card__overlay-text project-card__description">
+                  Accounting Software Website
+                </div>
+                <h2 className="project-card__overlay-text project-card__name">
+                  KashFlow
+                </h2>
+              </div>
+              <img className="project-card__image" src="./medias/kashflow/preview.jpg" alt="KashFlow"/>
             </Link>
           </div>
           <Footer />

@@ -32,7 +32,6 @@
   }
 }
 
-
 .project-card__overlay-background {
   background: $shark;
   bottom: 0;
@@ -58,13 +57,16 @@
   z-index: 1;
 }
 
-.project-card__overlay-text {
+.project-card__overlay-content {
   color: $white;
   left: 3%;
-  margin-top: 0;
-  opacity: 1;
   position: absolute;
+  top: 17%;
   z-index: 1;
+}
+
+.project-card__overlay-text {
+  opacity: 1;
 }
 
 .project-card__overlay-background,
@@ -83,22 +85,23 @@
 .project-card__description {
   font-size: $font-size-base-plus;
   font-weight: $weight-s;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
 }
 
-.project-card__skillset {
-  top: 17%;
+.project-card__skillset,
+.project-card__description,
+.project-card__name {
   transition: transform .3s ease-out, opacity .3s ease-out;
 }
 
 .project-card__description {
-  top: 21%;
-  transition: transform .3s ease-out, opacity .3s ease-out;
   transition-delay: .1s;
 }
 
 .project-card__name {
-  top: 28%;
-  transition: transform .3s ease-out, opacity .3s ease-out;
+  color: $white;
+  margin-top: 1.5rem;
   transition-delay: .2s;
 
   @include media($tablet) {
