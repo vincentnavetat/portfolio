@@ -35,7 +35,7 @@
 .project-card__overlay-background {
   background: $shark;
   height: 5.5rem;
-  opacity: .5;
+  opacity: .4;
   position: absolute;
   top: 0;
   width: 100%;
@@ -91,8 +91,6 @@
 .project-card__skillset,
 .project-card__description {
   font-size: $font-size-base;
-  margin-bottom: .5rem;
-  margin-top: .5rem;
 }
 
 .project-card__skillset,
