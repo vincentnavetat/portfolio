@@ -47,7 +47,9 @@ const Taskly = React.createClass({
 
   render() {
     const tools = [
-      'UX Design'
+      'UXPin',
+      'inVision',
+      'Adobe XD'
     ];
 
     var sliderSettings = {
@@ -79,10 +81,31 @@ const Taskly = React.createClass({
           <div className="project">
             <h1>{this.props.route.title}</h1>
 
-            <div className="project-view-tech">
-              {tools.map((tool) => {
-                return <div className="project-view-tools" key={tool}>{tool}</div>;
-              })}
+            <div className="container">
+              <div className="tags">
+                <div className="tag__category">
+                  Type
+                </div>
+                <div className="tag">
+                  Web + Mobile App
+                </div>
+              </div>
+              <div className="tags">
+                <div className="tag__category">
+                  Role
+                </div>
+                <div className="tag">
+                  UX/UI Design
+                </div>
+              </div>
+              <div className="tags">
+                <div className="tag__category">
+                  Tools
+                </div>
+                {tools.map((tool) => {
+                  return <div className="tag">{tool}</div>;
+                })}
+              </div>
             </div>
 
             <div className="project-view-summary">

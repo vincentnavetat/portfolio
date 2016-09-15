@@ -1,0 +1,22 @@
+.tags,
+.tag {
+  float: left;
+}
+
+.tags {
+  font-weight: $weight-l;
+  margin: 3rem 3rem 3rem 0;
+  text-transform: uppercase;
+}
+
+.tag__category {
+  color: $heather;
+}
+
+.tag {
+  background: $heather;
+  border-radius: .5rem;
+  color: $emperor;
+  margin-right: 1.5rem;
+  padding: .1rem 1rem;
+}
