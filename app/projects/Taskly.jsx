@@ -103,7 +103,7 @@ const Taskly = React.createClass({
                   Tools
                 </div>
                 {tools.map((tool) => {
-                  return <div className="tag">{tool}</div>;
+                  return <div className="tag" key={tool}>{tool}</div>;
                 })}
               </div>
             </div>
