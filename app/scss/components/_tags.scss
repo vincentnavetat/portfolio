@@ -1,3 +1,7 @@
+.tags-wrapper {
+  @include outer-container(100%);
+}
+
 .tags,
 .tag {
   float: left;

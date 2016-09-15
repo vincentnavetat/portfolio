@@ -81,7 +81,7 @@ const Taskly = React.createClass({
           <div className="project">
             <h1>{this.props.route.title}</h1>
 
-            <div className="container">
+            <div className="tags-wrapper">
               <div className="tags">
                 <div className="tag__category">
                   Type
