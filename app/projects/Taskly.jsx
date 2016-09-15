@@ -87,7 +87,7 @@ const Taskly = React.createClass({
                   Type
                 </div>
                 <div className="tag">
-                  Web + Mobile App
+                  Web + Mobile App Design
                 </div>
               </div>
               <div className="tags">

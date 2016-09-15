@@ -10,7 +10,8 @@ const UXUIDesign = React.createClass({
 
   render() {
     const tools = [
-      'UX Design'
+      'Adobe Illustrator',
+      'Adobe Photoshop'
     ];
 
     return (
@@ -19,10 +20,31 @@ const UXUIDesign = React.createClass({
           <div className="project">
             <h1>{this.props.route.title}</h1>
 
-            <div className="project-view-tech">
-              {tools.map((tool) => {
-                return <div className="project-view-tools" key={tool}>{tool}</div>;
-              })}
+            <div className="tags-wrapper">
+              <div className="tags">
+                <div className="tag__category">
+                  Type
+                </div>
+                <div className="tag">
+                  Mobile App Design
+                </div>
+              </div>
+              <div className="tags">
+                <div className="tag__category">
+                  Role
+                </div>
+                <div className="tag">
+                  UX/UI Design
+                </div>
+              </div>
+              <div className="tags">
+                <div className="tag__category">
+                  Tools
+                </div>
+                {tools.map((tool) => {
+                  return <div className="tag" key={tool}>{tool}</div>;
+                })}
+              </div>
             </div>
 
             <div className="project-view-summary">
