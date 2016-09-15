@@ -112,9 +112,11 @@ const Taskly = React.createClass({
               <p>
                 Taskly is an app I have designed as part of the UX Design course from CareerFoundry, I lead all the steps of the project from market research to interface design.
               </p>
+
               <p>
                 The start-up Taskly aims at proposing a new take on project management apps. Their goal is to create a simple and seamless experience for teams to collaborate in the creative and technology industries.
               </p>
+
               <p>
                 <a href="https://xd.adobe.com/view/3407161d-d084-400b-4519-c846437a2a9e/" target="_blank" className="btn">View mobile prototype</a>
               </p>
@@ -122,19 +124,24 @@ const Taskly = React.createClass({
               <h2>
                 Competitive research
               </h2>
+
               <p>
                 First, I analysed the main companies in the project management software field: Basecamp, Asana and Trello: what they offer, their limits and what opportunities are there for Taskly.
               </p>
+
               <h2>
                 User research
               </h2>
+
               <p>
                 Based on surveys and interviews, I could make a decision on the mostal valuable features for Taskly.
                 It seemed that potential users had the most issues with consolidating information from different modes of communication, as well as juggling multiple projects at the same time.
               </p>
+
               <h2>
                 User personas
               </h2>
+
               <p>
                 In order to target specific user needs, I set up 3 different personas: the Creative Employee, the Entrepreneur and the Manager.
               </p>
@@ -282,6 +289,7 @@ const Taskly = React.createClass({
               <h2>
                 Wireframes
               </h2>
+              
               <p>
                 Based on the paper prototype and initial user testing, I created wireframes for mobile, tablet and desktop devices on UXPin. This allowed me to create interactive prototypes that I used for a second set of user testing.
                 By using an interactive prototype, I could get a more accurate evaludation of the usability of the app. Testers could navigate autonomously throughout the app to achieve pre-defined goals. I could observe their behavoirs and make the right adjustments afterwards.

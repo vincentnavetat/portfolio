@@ -48,6 +48,10 @@ const UXUIDesign = React.createClass({
             </div>
 
             <div className="project-view-summary">
+              <p>
+                I have created a series of designs in order to train myself to creating Apps concepts with the UX/UI designs that would suit them best.
+              </p>
+
               <h3>
                 Weather Mobile App
               </h3>
@@ -59,7 +63,6 @@ const UXUIDesign = React.createClass({
               </h3>
 
               <img src="../medias/ux-ui-design/physio-app.jpg" alt="Physiotherapy Mobile App Design"/>
-
             </div>
           </div>
           <Navigation prev="taskly" next="kashflow"/>
