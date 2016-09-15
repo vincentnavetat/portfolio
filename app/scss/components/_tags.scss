@@ -1,5 +1,6 @@
 .tags-wrapper {
   @include outer-container(100%);
+  margin: 3rem 0;
 }
 
 .tags,
@@ -8,7 +9,8 @@
 }
 
 .tags {
-  margin: 3rem 3rem 3rem 0;
+  margin-bottom: 1.5rem;
+  margin-right: 3rem;
   text-transform: uppercase;
 }
 

@@ -16,21 +16,7 @@
   @include span-columns(6);
 }
 
-.header__side--left {
-  // padding-left: 1.5rem;
-  //
-  // @include media($desktop) {
-  //   padding-left: 0;
-  // }
-}
-
 .header__side--right {
-  // padding-right: 1.5rem;
-  //
-  // @include media($desktop) {
-  //   padding-right: 0;
-  // }
-
   .header__link {
     margin-right: 3rem;
   }

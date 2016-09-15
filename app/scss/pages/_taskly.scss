@@ -4,7 +4,6 @@
 
 .persona {
   @include span-columns(4);
-  height: 39.5rem;
   position: relative;
   text-align: center;
   transition: opacity .3s ease;
