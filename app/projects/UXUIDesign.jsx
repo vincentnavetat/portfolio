@@ -49,19 +49,21 @@ const UXUIDesign = React.createClass({
 
             <div className="project-view-summary">
               <h3>
-                Weather App
+                Weather Mobile App
               </h3>
-              <img src="../medias/ux-ui-design/weather-app.jpg" alt=""/>
+
+              <img src="../medias/ux-ui-design/weather-app.jpg" alt="Weather Mobile App Design"/>
 
               <h3>
-                Physiotherapy App
+                Physiotherapy Mobile App
               </h3>
-              <img src="../medias/ux-ui-design/physio-app.jpg" alt=""/>
+
+              <img src="../medias/ux-ui-design/physio-app.jpg" alt="Physiotherapy Mobile App Design"/>
 
             </div>
           </div>
-          <Navigation prev="taskly" next="kashflow" />
-          <Footer />
+          <Navigation prev="taskly" next="kashflow"/>
+          <Footer/>
         </div>
       </div>
     );

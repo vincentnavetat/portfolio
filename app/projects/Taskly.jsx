@@ -354,15 +354,15 @@ const Taskly = React.createClass({
                 I finally designed the User Interface for each screen of the mobile app, based on the wireframes. It resulted in the creation of a final prototype.
               </p>
 
-              <img src="../medias/taskly/ui-demo.jpg" alt="" />
+              <img src="../medias/taskly/ui-demo.jpg" alt=""/>
 
               <p className="text-center">
                 <a href="https://xd.adobe.com/view/3407161d-d084-400b-4519-c846437a2a9e/" target="_blank" className="btn">View mobile prototype</a>
               </p>
             </div>
           </div>
-          <Navigation prev="kashflow" next="ux-ui-design" />
-          <Footer />
+          <Navigation prev="kashflow" next="ux-ui-design"/>
+          <Footer/>
         </div>
       </div>
     );
