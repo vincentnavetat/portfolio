@@ -4,6 +4,10 @@
 
 .persona {
   @include span-columns(4);
+}
+
+.lightbox-enabled {
+  display: block;
   position: relative;
   text-align: center;
   transition: opacity .3s ease;
@@ -28,13 +32,13 @@
       opacity: 1;
     }
 
-    .persona__overlay {
+    .lightbox-enabled__overlay {
       opacity: .4;
     }
   }
 }
 
-.persona__overlay {
+.lightbox-enabled__overlay {
   background: $shark;
   bottom: 0;
   height: 100%;

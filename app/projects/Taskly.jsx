@@ -9,12 +9,23 @@ var images = [
   '../medias/taskly/persona-designer.jpg',
   '../medias/taskly/persona-entrepreneur.jpg',
   '../medias/taskly/persona-project-manager.jpg',
+  '../medias/taskly/customer-experience-map.png',
+  '../medias/taskly/task-model.png',
+  '../medias/taskly/sitemap-corporate.png',
+  '../medias/taskly/sitemap-general.png',
+  '../medias/taskly/sitemap-projects.png'
 ];
+
 
 var captions = [
   'Persona: Designer',
   'Persona: Entrepreneur',
   'Persona: Project Manager',
+  'Customer Experience Map',
+  'Task Model',
+  'Sitemap: Corporate Website',
+  'Sitemap: App - General',
+  'Sitemap: App - Projects'
 ];
 
 const Taskly = React.createClass({
@@ -147,17 +158,17 @@ const Taskly = React.createClass({
               </p>
 
               <div className="personas">
-                <a className="persona" onClick={() => this.openLightbox(0)} href="javascript:void(0)">
-                  <div className="persona__overlay"></div>
-                  <img src="../medias/taskly/persona-designer.jpg" alt="" />
+                <a className="persona lightbox-enabled" href="javascript:void(0)" onClick={() => this.openLightbox(0)}>
+                  <div className="lightbox-enabled__overlay"></div>
+                  <img src="../medias/taskly/persona-designer.jpg" alt=""/>
                 </a>
-                <a className="persona" onClick={() => this.openLightbox(1)} href="javascript:void(0)">
-                  <div className="persona__overlay"></div>
-                  <img src="../medias/taskly/persona-entrepreneur.jpg" alt="" />
+                <a className="persona lightbox-enabled" href="javascript:void(0)" onClick={() => this.openLightbox(1)}>
+                  <div className="lightbox-enabled__overlay"></div>
+                  <img src="../medias/taskly/persona-entrepreneur.jpg" alt=""/>
                 </a>
-                <a className="persona" onClick={() => this.openLightbox(2)} href="javascript:void(0)">
-                  <div className="persona__overlay"></div>
-                  <img src="../medias/taskly/persona-project-manager.jpg" alt="" />
+                <a className="persona lightbox-enabled" href="javascript:void(0)" onClick={() => this.openLightbox(2)}>
+                  <div className="lightbox-enabled__overlay"></div>
+                  <img src="../medias/taskly/persona-project-manager.jpg" alt=""/>
                 </a>
               </div>
 
@@ -171,7 +182,10 @@ const Taskly = React.createClass({
                 After defining the features contained in the Most Viable Product for Taskly, I designed a Task for the Project Setup:
               </p>
 
-              <img src="../medias/taskly/customer-experience-map.png" alt="Customer Experience Map for Taskly" />
+              <a className="lightbox-enabled" href="javascript:void(0)" onClick={() => this.openLightbox(3)}>
+                <div className="lightbox-enabled__overlay"></div>
+                <img src="../medias/taskly/customer-experience-map.png" alt="Customer Experience Map for Taskly"/>
+              </a>
 
               <h2>
                 Customer experience map
@@ -181,7 +195,10 @@ const Taskly = React.createClass({
                 Based on the Manager persona, I designed a Customer Experience Map which helped me going though all the steps of a project and have a clear understanding of all the processes involved.
               </p>
 
-              <img src="../medias/taskly/task-model.png" alt="Task Model for Taskly" />
+              <a className="lightbox-enabled" href="javascript:void(0)" onClick={() => this.openLightbox(4)}>
+                <div className="lightbox-enabled__overlay"></div>
+                <img src="../medias/taskly/task-model.png" alt="Task Model for Taskly"/>
+              </a>
 
               <h2>
                 Site map
@@ -194,17 +211,29 @@ const Taskly = React.createClass({
               <h3>
                 Corporate Website
               </h3>
-              <img src="../medias/taskly/sitemap-corporate.png" alt="" />
+
+              <a className="lightbox-enabled" href="javascript:void(0)" onClick={() => this.openLightbox(5)}>
+                <div className="lightbox-enabled__overlay"></div>
+                <img src="../medias/taskly/sitemap-corporate.png" alt="Sitemap for Taskly's Corporate Website"/>
+              </a>
 
               <h3>
                 App / General
               </h3>
-              <img src="../medias/taskly/sitemap-general.png" alt="" />
+
+              <a className="lightbox-enabled" href="javascript:void(0)" onClick={() => this.openLightbox(6)}>
+                <div className="lightbox-enabled__overlay"></div>
+                <img src="../medias/taskly/sitemap-general.png" alt="Sitemap for Taskly's App"/>
+              </a>
 
               <h3>
                 App / Projects
               </h3>
-              <img src="../medias/taskly/sitemap-projects.png" alt="" />
+
+              <a className="lightbox-enabled" href="javascript:void(0)" onClick={() => this.openLightbox(7)}>
+                <div className="lightbox-enabled__overlay"></div>
+                <img src="../medias/taskly/sitemap-projects.png" alt="Sitemap for Taskly's App - Projects Side"/>
+              </a>
 
               <h2>
                 Sketches
@@ -218,78 +247,78 @@ const Taskly = React.createClass({
               <Slider {...sliderSettings}>
                 <figure>
                   <figcaption>Dashboard</figcaption>
-                  <img src="../medias/taskly/paper-prototype-01-dashboard.jpg" alt="Taskly's Paper Prototype - Dashboard" />
+                  <img src="../medias/taskly/paper-prototype-01-dashboard.jpg" alt="Taskly's Paper Prototype - Dashboard"/>
                 </figure>
                 <figure>
                   <figcaption>Navigation Dropdowns</figcaption>
-                  <img src="../medias/taskly/paper-prototype-02-navigation.jpg" alt="Taskly's Paper Prototype - Navigation Dropdowns" />
+                  <img src="../medias/taskly/paper-prototype-02-navigation.jpg" alt="Taskly's Paper Prototype - Navigation Dropdowns"/>
                 </figure>
                 <figure>
                   <figcaption>Create a New Project</figcaption>
-                  <img src="../medias/taskly/paper-prototype-03-create-new-project.jpg" alt="Taskly's Paper Prototype - Create a New Project" />
+                  <img src="../medias/taskly/paper-prototype-03-create-new-project.jpg" alt="Taskly's Paper Prototype - Create a New Project"/>
                 </figure>
                 <figure>
                   <figcaption>New Project</figcaption>
-                  <img src="../medias/taskly/paper-prototype-04-new-project.jpg" alt="Taskly's Paper Prototype - New Project" />
+                  <img src="../medias/taskly/paper-prototype-04-new-project.jpg" alt="Taskly's Paper Prototype - New Project"/>
                 </figure>
                 <figure>
                   <figcaption>Project Menu</figcaption>
-                  <img src="../medias/taskly/paper-prototype-05-project-menu.jpg" alt="Taskly's Paper Prototype - Project Menu" />
+                  <img src="../medias/taskly/paper-prototype-05-project-menu.jpg" alt="Taskly's Paper Prototype - Project Menu"/>
                 </figure>
                 <figure>
                   <figcaption>Create a New Task</figcaption>
-                  <img src="../medias/taskly/paper-prototype-06-create-new-task.jpg" alt="Taskly's Paper Prototype - Create a New Task" />
+                  <img src="../medias/taskly/paper-prototype-06-create-new-task.jpg" alt="Taskly's Paper Prototype - Create a New Task"/>
                 </figure>
                 <figure>
                   <figcaption>Task</figcaption>
-                  <img src="../medias/taskly/paper-prototype-07-task.jpg" alt="Taskly's Paper Prototype - Task" />
+                  <img src="../medias/taskly/paper-prototype-07-task.jpg" alt="Taskly's Paper Prototype - Task"/>
                 </figure>
                 <figure>
                   <figcaption>Project</figcaption>
-                  <img src="../medias/taskly/paper-prototype-08-project.jpg" alt="Taskly's Paper Prototype - Project" />
+                  <img src="../medias/taskly/paper-prototype-08-project.jpg" alt="Taskly's Paper Prototype - Project"/>
                 </figure>
                 <figure>
                   <figcaption>Project Sprint</figcaption>
-                  <img src="../medias/taskly/paper-prototype-09-sprint.jpg" alt="Taskly's Paper Prototype - Project Sprint" />
+                  <img src="../medias/taskly/paper-prototype-09-sprint.jpg" alt="Taskly's Paper Prototype - Project Sprint"/>
                 </figure>
                 <figure>
                   <figcaption>Task's Team Member</figcaption>
-                  <img src="../medias/taskly/paper-prototype-10-team-member.jpg" alt="Taskly's Paper Prototype - Task's Team Member" />
+                  <img src="../medias/taskly/paper-prototype-10-team-member.jpg" alt="Taskly's Paper Prototype - Task's Team Member"/>
                 </figure>
                 <figure>
                   <figcaption>Conversations</figcaption>
-                  <img src="../medias/taskly/paper-prototype-11-conversations.jpg" alt="Taskly's Paper Prototype - Conversations" />
+                  <img src="../medias/taskly/paper-prototype-11-conversations.jpg" alt="Taskly's Paper Prototype - Conversations"/>
                 </figure>
                 <figure>
                   <figcaption>Create a Conversation</figcaption>
-                  <img src="../medias/taskly/paper-prototype-12-create-new-conversation.jpg" alt="Taskly's Paper Prototype - Create a Conversation" />
+                  <img src="../medias/taskly/paper-prototype-12-create-new-conversation.jpg" alt="Taskly's Paper Prototype - Create a Conversation"/>
                 </figure>
                 <figure>
                   <figcaption>New Conversation</figcaption>
-                  <img src="../medias/taskly/paper-prototype-13-new-conversation.jpg" alt="Taskly's Paper Prototype - New Conversation" />
+                  <img src="../medias/taskly/paper-prototype-13-new-conversation.jpg" alt="Taskly's Paper Prototype - New Conversation"/>
                 </figure>
                 <figure>
                   <figcaption>Conversation</figcaption>
-                  <img src="../medias/taskly/paper-prototype-14-conversation.jpg" alt="Taskly's Paper Prototype - Conversation" />
+                  <img src="../medias/taskly/paper-prototype-14-conversation.jpg" alt="Taskly's Paper Prototype - Conversation"/>
                 </figure>
                 <figure>
                   <figcaption>Files</figcaption>
-                  <img src="../medias/taskly/paper-prototype-15-files.jpg" alt="Taskly's Paper Prototype - Files" />
+                  <img src="../medias/taskly/paper-prototype-15-files.jpg" alt="Taskly's Paper Prototype - Files"/>
                 </figure>
                 <figure>
                   <figcaption>New File</figcaption>
-                  <img src="../medias/taskly/paper-prototype-16-new-file.jpg" alt="Taskly's Paper Prototype - New File" />
+                  <img src="../medias/taskly/paper-prototype-16-new-file.jpg" alt="Taskly's Paper Prototype - New File"/>
                 </figure>
                 <figure>
                   <figcaption>File History</figcaption>
-                  <img src="../medias/taskly/paper-prototype-17-file-history.jpg" alt="Taskly's Paper Prototype - File History" />
+                  <img src="../medias/taskly/paper-prototype-17-file-history.jpg" alt="Taskly's Paper Prototype - File History"/>
                 </figure>
               </Slider>
 
               <h2>
                 Wireframes
               </h2>
-              
+
               <p>
                 Based on the paper prototype and initial user testing, I created wireframes for mobile, tablet and desktop devices on UXPin. This allowed me to create interactive prototypes that I used for a second set of user testing.
                 By using an interactive prototype, I could get a more accurate evaludation of the usability of the app. Testers could navigate autonomously throughout the app to achieve pre-defined goals. I could observe their behavoirs and make the right adjustments afterwards.
@@ -298,59 +327,59 @@ const Taskly = React.createClass({
               <Slider {...sliderSettings}>
                 <figure>
                   <figcaption>Mobile - Login</figcaption>
-                  <img src="../medias/taskly/wireframes-mobile-01-login.png" alt="Taskly's Wireframes - Mobile Login" />
+                  <img src="../medias/taskly/wireframes-mobile-01-login.png" alt="Taskly's Wireframes - Mobile Login"/>
                 </figure>
                 <figure>
                   <figcaption>Mobile - Navigation</figcaption>
-                  <img src="../medias/taskly/wireframes-mobile-02-navigation.png" alt="Taskly's Wireframes - Mobile Navigation" />
+                  <img src="../medias/taskly/wireframes-mobile-02-navigation.png" alt="Taskly's Wireframes - Mobile Navigation"/>
                 </figure>
                 <figure>
                   <figcaption>Mobile - New Project</figcaption>
-                  <img src="../medias/taskly/wireframes-mobile-03-new-project.png" alt="Taskly's Wireframes - Mobile New Project" />
+                  <img src="../medias/taskly/wireframes-mobile-03-new-project.png" alt="Taskly's Wireframes - Mobile New Project"/>
                 </figure>
                 <figure>
                   <figcaption>Mobile - New Task</figcaption>
-                  <img src="../medias/taskly/wireframes-mobile-04-new-task.png" alt="Taskly's Wireframes - Mobile New Task" />
+                  <img src="../medias/taskly/wireframes-mobile-04-new-task.png" alt="Taskly's Wireframes - Mobile New Task"/>
                 </figure>
                 <figure>
                   <figcaption>Mobile - New File</figcaption>
-                  <img src="../medias/taskly/wireframes-mobile-05-new-file.png" alt="Taskly's Wireframes - Mobile New File" />
+                  <img src="../medias/taskly/wireframes-mobile-05-new-file.png" alt="Taskly's Wireframes - Mobile New File"/>
                 </figure>
                 <figure>
                   <figcaption>Mobile - Add a Team Member</figcaption>
-                  <img src="../medias/taskly/wireframes-mobile-06-add-team-member.png" alt="Taskly's Wireframes - Mobile Add a Team Member" />
+                  <img src="../medias/taskly/wireframes-mobile-06-add-team-member.png" alt="Taskly's Wireframes - Mobile Add a Team Member"/>
                 </figure>
                 <figure>
                   <figcaption>Tablet - Navigation</figcaption>
-                  <img src="../medias/taskly/wireframes-tablet-01-navigation.png" alt="Taskly's Wireframes - Tablet Navigation" />
+                  <img src="../medias/taskly/wireframes-tablet-01-navigation.png" alt="Taskly's Wireframes - Tablet Navigation"/>
                 </figure>
                 <figure>
                   <figcaption>Tablet - New Project</figcaption>
-                  <img src="../medias/taskly/wireframes-tablet-02-new-project.png" alt="Taskly's Wireframes - Tablet New Project" />
+                  <img src="../medias/taskly/wireframes-tablet-02-new-project.png" alt="Taskly's Wireframes - Tablet New Project"/>
                 </figure>
                 <figure>
                   <figcaption>Tablet - New Task</figcaption>
-                  <img src="../medias/taskly/wireframes-tablet-03-new-task.png" alt="Taskly's Wireframes - Tablet New Task" />
+                  <img src="../medias/taskly/wireframes-tablet-03-new-task.png" alt="Taskly's Wireframes - Tablet New Task"/>
                 </figure>
                 <figure>
                   <figcaption>Tablet - New File</figcaption>
-                  <img src="../medias/taskly/wireframes-tablet-04-new-file.png" alt="Taskly's Wireframes - Tablet New File" />
+                  <img src="../medias/taskly/wireframes-tablet-04-new-file.png" alt="Taskly's Wireframes - Tablet New File"/>
                 </figure>
                 <figure>
                   <figcaption>Desktop - Navigation</figcaption>
-                  <img src="../medias/taskly/wireframes-desktop-01-navigation.png" alt="Taskly's Wireframes - Desktop Navigation" />
+                  <img src="../medias/taskly/wireframes-desktop-01-navigation.png" alt="Taskly's Wireframes - Desktop Navigation"/>
                 </figure>
                 <figure>
                   <figcaption>Desktop - New Project</figcaption>
-                  <img src="../medias/taskly/wireframes-desktop-02-new-project.png" alt="Taskly's Wireframes - Desktop New Project" />
+                  <img src="../medias/taskly/wireframes-desktop-02-new-project.png" alt="Taskly's Wireframes - Desktop New Project"/>
                 </figure>
                 <figure>
                   <figcaption>Desktop - New Task</figcaption>
-                  <img src="../medias/taskly/wireframes-desktop-03-new-task.png" alt="Taskly's Wireframes - Desktop New Task" />
+                  <img src="../medias/taskly/wireframes-desktop-03-new-task.png" alt="Taskly's Wireframes - Desktop New Task"/>
                 </figure>
                 <figure>
                   <figcaption>Desktop - New File</figcaption>
-                  <img src="../medias/taskly/wireframes-desktop-04-new-file.png" alt="Taskly's Wireframes - Desktop New File" />
+                  <img src="../medias/taskly/wireframes-desktop-04-new-file.png" alt="Taskly's Wireframes - Desktop New File"/>
                 </figure>
               </Slider>
 

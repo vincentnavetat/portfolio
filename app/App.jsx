@@ -16,7 +16,7 @@ const App = React.createClass({
   render() {
     return (
       <div>
-        <Header />
+        <Header/>
         <div className="container">
           <RouteTransition
             component={false}

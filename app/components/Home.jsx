@@ -62,7 +62,7 @@ const Home = React.createClass({
               <img className="project-card__image" src="./medias/kashflow/preview.jpg" alt="KashFlow"/>
             </Link>
           </div>
-          <Footer />
+          <Footer/>
         </div>
       </div>
     );
