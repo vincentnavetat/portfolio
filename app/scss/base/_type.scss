@@ -8,7 +8,20 @@ h3 {
 h2 {
   font-size: $font-size-m;
   margin-bottom: 3rem;
+  margin-top: 4.5rem;
+}
+
+h3 {
   margin-top: 3rem;
+}
+
+a {
+  color: $pelorous;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .text-left {

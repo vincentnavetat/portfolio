@@ -5,3 +5,9 @@
 .persona {
   @include span-columns(4);
 }
+
+.file-download {
+  display: inline-block;
+  margin: 3rem 0 1.5rem;
+  width: 100%;
+}
