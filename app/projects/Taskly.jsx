@@ -162,16 +162,16 @@ const Taskly = React.createClass({
               </p>
 
               <div className="personas">
-                <a className="persona lightbox-enabled" href="javascript:void(0)" onClick={() => this.openLightbox(0)}>
-                  <div className="lightbox-enabled__overlay"></div>
+                <a className="persona lightbox-link" href="javascript:void(0)" onClick={() => this.openLightbox(0)}>
+                  <div className="lightbox-link__overlay"></div>
                   <img src="../medias/taskly/persona-designer.jpg" alt=""/>
                 </a>
-                <a className="persona lightbox-enabled" href="javascript:void(0)" onClick={() => this.openLightbox(1)}>
-                  <div className="lightbox-enabled__overlay"></div>
+                <a className="persona lightbox-link" href="javascript:void(0)" onClick={() => this.openLightbox(1)}>
+                  <div className="lightbox-link__overlay"></div>
                   <img src="../medias/taskly/persona-entrepreneur.jpg" alt=""/>
                 </a>
-                <a className="persona lightbox-enabled" href="javascript:void(0)" onClick={() => this.openLightbox(2)}>
-                  <div className="lightbox-enabled__overlay"></div>
+                <a className="persona lightbox-link" href="javascript:void(0)" onClick={() => this.openLightbox(2)}>
+                  <div className="lightbox-link__overlay"></div>
                   <img src="../medias/taskly/persona-project-manager.jpg" alt=""/>
                 </a>
               </div>
@@ -186,8 +186,8 @@ const Taskly = React.createClass({
                 After defining the features contained in the Most Viable Product for Taskly, I designed a Task for the Project Setup:
               </p>
 
-              <a className="lightbox-enabled" href="javascript:void(0)" onClick={() => this.openLightbox(3)}>
-                <div className="lightbox-enabled__overlay"></div>
+              <a className="lightbox-link" href="javascript:void(0)" onClick={() => this.openLightbox(3)}>
+                <div className="lightbox-link__overlay"></div>
                 <img src="../medias/taskly/customer-experience-map.png" alt="Customer Experience Map for Taskly"/>
               </a>
 
@@ -199,8 +199,8 @@ const Taskly = React.createClass({
                 Based on the Manager persona, I designed a Customer Experience Map which helped me going though all the steps of a project and have a clear understanding of all the processes involved.
               </p>
 
-              <a className="lightbox-enabled" href="javascript:void(0)" onClick={() => this.openLightbox(4)}>
-                <div className="lightbox-enabled__overlay"></div>
+              <a className="lightbox-link" href="javascript:void(0)" onClick={() => this.openLightbox(4)}>
+                <div className="lightbox-link__overlay"></div>
                 <img src="../medias/taskly/task-model.png" alt="Task Model for Taskly"/>
               </a>
 
@@ -216,8 +216,8 @@ const Taskly = React.createClass({
                 Corporate Website
               </h3>
 
-              <a className="lightbox-enabled" href="javascript:void(0)" onClick={() => this.openLightbox(5)}>
-                <div className="lightbox-enabled__overlay"></div>
+              <a className="lightbox-link" href="javascript:void(0)" onClick={() => this.openLightbox(5)}>
+                <div className="lightbox-link__overlay"></div>
                 <img src="../medias/taskly/sitemap-corporate.png" alt="Sitemap for Taskly's Corporate Website"/>
               </a>
 
@@ -225,8 +225,8 @@ const Taskly = React.createClass({
                 App / General
               </h3>
 
-              <a className="lightbox-enabled" href="javascript:void(0)" onClick={() => this.openLightbox(6)}>
-                <div className="lightbox-enabled__overlay"></div>
+              <a className="lightbox-link" href="javascript:void(0)" onClick={() => this.openLightbox(6)}>
+                <div className="lightbox-link__overlay"></div>
                 <img src="../medias/taskly/sitemap-general.png" alt="Sitemap for Taskly's App"/>
               </a>
 
@@ -234,8 +234,8 @@ const Taskly = React.createClass({
                 App / Projects
               </h3>
 
-              <a className="lightbox-enabled" href="javascript:void(0)" onClick={() => this.openLightbox(7)}>
-                <div className="lightbox-enabled__overlay"></div>
+              <a className="lightbox-link" href="javascript:void(0)" onClick={() => this.openLightbox(7)}>
+                <div className="lightbox-link__overlay"></div>
                 <img src="../medias/taskly/sitemap-projects.png" alt="Sitemap for Taskly's App - Projects Side"/>
               </a>
 
