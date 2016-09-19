@@ -9,7 +9,6 @@
   overflow: hidden;
   padding: .5rem 3rem;
   position: relative;
-  text-decoration: none;
   text-transform: uppercase;
   transition: .3s all;
 
@@ -28,6 +27,7 @@
 
   &:hover {
     color: $white;
+    text-decoration: none;
 
     &::after {
       left: -10%;

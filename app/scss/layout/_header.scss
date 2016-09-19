@@ -30,6 +30,11 @@
 .header__link {
   color: $shark;
   text-decoration: none;
+
+  &:hover {
+    opacity: .7;
+    text-decoration: none;
+  }
 }
 
 .header__description {

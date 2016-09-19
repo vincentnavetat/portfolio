@@ -1,10 +1,10 @@
 .footer {
-  margin: 20rem 0 5rem;
+  margin: 20rem 0 7rem;
 }
 
 .footer__social-networks {
   list-style-type: none;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   padding-left: 0;
 }
 
@@ -22,7 +22,6 @@
   border-radius: 1.5rem;
   display: inline-block;
   height: 3rem;
-
   padding-top: .6rem;
   transition: box-shadow .2s cubic-bezier(.2, 0, .7, 1);
   width: 3rem;
@@ -51,7 +50,7 @@
   svg {
     fill: $heather;
     height: 1.7rem;
-    margin: 0 .8rem;
+    margin: 0 .5rem;
   }
 }
 

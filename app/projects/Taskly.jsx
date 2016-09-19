@@ -398,7 +398,7 @@ const Taskly = React.createClass({
 
               <img src="../medias/taskly/ui-demo.jpg" alt=""/>
 
-              <p className="text-center">
+              <p className="project__footer text-center">
                 <a href="https://xd.adobe.com/view/3407161d-d084-400b-4519-c846437a2a9e/" target="_blank" className="btn">View mobile prototype</a>
               </p>
             </div>
