@@ -140,7 +140,7 @@ const Taskly = React.createClass({
                 First, I analysed the main companies in the project management software field: Basecamp, Asana and Trello: what they offer, their limits and what opportunities are there for Taskly.
               </p>
 
-              <a className="text-center file-download" href="javascript:void(0)">
+              <a className="text-center file-download" href="../medias/taskly/taskly-competitive-research.pdf" target="_blank">
                 <img src="../medias/taskly/competitive-research.png" alt="Competitive research: Basecamp vs Trello vs Asana"/>
                 Download the competitive research (pdf)
               </a>

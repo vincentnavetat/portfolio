@@ -19,7 +19,7 @@ const Header = React.createClass({
           </div>
           <div className="header__side header__side--right text-right">
             {/*<Link to="/" key="home" className="header__link">About</Link>*/}
-            <a href="#" className="btn">Résumé</a>
+            <a href="../medias/vincent-navetat-resume.pdf" target="_blank" className="btn">Résumé</a>
           </div>
         </div>
       </header>
