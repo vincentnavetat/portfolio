@@ -21,11 +21,21 @@
 .nav-arrow__prev {
   float: left;
   margin-left: 3rem;
+
+  &::before {
+    content: '← ';
+    font-family: 'Source Sans Pro', sans-serif;
+  }
 }
 
 .nav-arrow__next {
   float: right;
   margin-right: 3rem;
+
+  &::after {
+    content: ' →';
+    font-family: 'Source Sans Pro', sans-serif;
+  }
 }
 
 @include media($tablet) {

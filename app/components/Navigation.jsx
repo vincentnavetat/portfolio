@@ -13,10 +13,10 @@ const Navigation = React.createClass({
     return (
       <div className="nav-arrows">
         <Link to={this.props.prev} className="nav-arrow nav-arrow__prev">
-          ← Prev
+          Prev
         </Link>
         <Link to={this.props.next} className="nav-arrow nav-arrow__next">
-          Next →
+          Next
         </Link>
       </div>
     );
