@@ -5,7 +5,6 @@
   margin-top: 4.5rem;
   padding-top: 2.5rem;
   text-align: center;
-  text-decoration: none;
   top: 50%;
   transition: box-shadow .4s cubic-bezier(.2, 0, .7, 1);
   width: 7.5rem;
@@ -13,8 +12,9 @@
 
   &:hover {
     box-shadow: 0 0 .1rem .75rem rgba($pale-sky, .3),
-    0 0 .1rem 1.5rem rgba($pale-sky, .2),
-    0 0 .1rem 2.25rem rgba($pale-sky, .1);
+      0 0 .1rem 1.5rem rgba($pale-sky, .2),
+      0 0 .1rem 2.25rem rgba($pale-sky, .1);
+    text-decoration: none;
   }
 }
 
