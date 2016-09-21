@@ -11,8 +11,8 @@ module.exports = {
   entry: path.join(app, '/index.jsx'),
   output: {
     path: path.join(__dirname, 'lib'),
-    filename: 'portfolio.js',
-    sourceMapFilename: 'portfolio.map',
+    filename: 'index.js',
+    sourceMapFilename: 'index.map',
     library: 'Portfolio',
     libraryTarget: 'umd'
   },
