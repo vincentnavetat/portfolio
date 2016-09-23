@@ -1,38 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router';
 import RouteTransition from './components/RouteTransition';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Header from './components/Header';
 
-const App = React.createClass({
-  propTypes: {
-    route: React.PropTypes.object,
-    location: React.PropTypes.object
-  },
-
-  contextTypes: {
-    router: React.PropTypes.object
-  },
-
-  render() {
-    return (
-      <div>
-        <Header/>
-        <div className="container">
-          <RouteTransition
-            component={false}
-            pathname={this.props.location.pathname}
-            className="transition-wrapper"
-            atEnter={{ opacity: 0 }}
-            atLeave={{ opacity: 0 }}
-            atActive={{ opacity: 1 }}
-            runOnMount={false}
-          >
-            {this.props.children}
-          </RouteTransition>
-        </div>
+const App = ({ children, location }) => (
+  <div>
+    <Header/>
+    <div className="container">
+      <div className="transition-wrapper">
+        <ReactCSSTransitionGroup
+          transitionName="fade-wait"
+          transitionEnterTimeout={1000}
+          transitionLeaveTimeout={1000}
+        >
+          {React.cloneElement(children, {
+            key: location.pathname
+          })}
+        </ReactCSSTransitionGroup>
       </div>
-    );
-  }
-});
+    </div>
+  </div>
+);
 
 export default App;

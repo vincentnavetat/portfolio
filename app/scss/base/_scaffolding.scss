@@ -32,11 +32,7 @@ figure {
   position: relative;
 }
 
-// ensures the transitions work
 .page-content {
-  position: absolute;
-  width: 100%;
-
   @include media($tablet) {
     padding: 0;
   }

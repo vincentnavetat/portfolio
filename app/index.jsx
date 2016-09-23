@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import App from './App';
@@ -8,7 +9,11 @@ import Taskly from './projects/Taskly';
 import UXUIDesign from './projects/UXUIDesign';
 import KashFlow from './projects/KashFlow';
 
-const Routing = () => (
+if (typeof window !== 'undefined') {
+  require('./scss/styles.scss');
+}
+
+render((
   <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home} title="Home"/>
@@ -17,10 +22,4 @@ const Routing = () => (
       <Route path="kashflow" component={KashFlow} title="KashFlow"/>
     </Route>
   </Router>
-);
-
-if (typeof window !== 'undefined') {
-  require('./scss/styles.scss');
-}
-
-ReactDOM.render(<Routing/>, document.querySelector('#app'));
+), document.getElementById('app'))
