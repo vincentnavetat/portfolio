@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router';
-import RouteTransition from './components/RouteTransition';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Header from './components/Header';
 
