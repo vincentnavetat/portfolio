@@ -10,8 +10,10 @@ const App = ({ children, location }) => (
       <div className="transition-wrapper">
         <ReactCSSTransitionGroup
           transitionName="fade-wait"
-          transitionEnterTimeout={1000}
-          transitionLeaveTimeout={1000}
+          transitionAppear={true}
+          transitionAppearTimeout={500}
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={500}
         >
           {React.cloneElement(children, {
             key: location.pathname
