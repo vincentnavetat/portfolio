@@ -8,8 +8,10 @@ const Header = React.createClass({
         <div className="container">
           <div className="header__side header__side--left">
             <Link to="/" key="home" className="header__link">
-              Vincent Navetat
-              <span className="header__description header__description--short">
+              <span className="header__name">
+                Vincent Navetat
+              </span>
+              <span className="header__description header__description--mobile">
                 UX + Dev
               </span>
               <span className="header__description">

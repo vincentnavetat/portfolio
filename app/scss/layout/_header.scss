@@ -28,13 +28,28 @@
 }
 
 .header__link {
-  color: $shark;
   text-decoration: none;
 
-  &:hover {
-    opacity: .7;
-    text-decoration: none;
+  span {
+    transition: opacity .3s;
   }
+
+  &:hover {
+    span {
+      opacity: .7;
+      text-decoration: none;
+    }
+  }
+}
+
+.header__name,
+.header__description {
+  clear: both;
+  float: left;
+}
+
+.header__name {
+  color: $shark;
 }
 
 .header__description {
@@ -42,12 +57,12 @@
   display: none;
 
   @include media($mobile) {
-    display: block;
+    display: inline-block;
   }
 }
 
-.header__description--short {
-  display: block;
+.header__description--mobile {
+  display: inline-block;
 
   @include media($mobile) {
     display: none;
