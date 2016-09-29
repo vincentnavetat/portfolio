@@ -5,3 +5,5 @@ lib
 /demos/**/index.js
 
 node_modules
+Thumbs.db
+ehthumbs.db
