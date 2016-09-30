@@ -61,6 +61,22 @@ const Home = React.createClass({
               </div>
               <img className="project-card__image" src="./medias/kashflow/preview.jpg" alt="KashFlow"/>
             </Link>
+            <Link to={'portfolio'} className="project-card">
+              <div className="project-card__overlay-background"></div>
+              <div className="project-card__overlay-line"></div>
+              <div className="project-card__overlay-content">
+                <div className="project-card__overlay-text project-card__skillset">
+                  UX/UI Design + Web Development
+                </div>
+                <div className="project-card__overlay-text project-card__description">
+                  Single-page App
+                </div>
+                <h2 className="project-card__overlay-text project-card__name">
+                  Portfolio
+                </h2>
+              </div>
+              <img className="project-card__image" src="./medias/portfolio/preview.jpg" alt="Portfolio"/>
+            </Link>
           </div>
           <Footer/>
         </div>

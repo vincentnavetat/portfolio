@@ -89,7 +89,7 @@ const KashFlow = React.createClass({
               </p>
             </div>
           </div>
-          <Navigation prev="ux-ui-design" next="taskly"/>
+          <Navigation prev="ux-ui-design" next="portfolio"/>
           <Footer/>
         </div>
       </div>

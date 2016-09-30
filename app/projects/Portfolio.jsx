@@ -29,7 +29,7 @@ const Portfolio = React.createClass({
                   Type
                 </div>
                 <div className="tag">
-                  Website
+                  Single-page App
                 </div>
               </div>
               <div className="tags">
@@ -68,7 +68,7 @@ const Portfolio = React.createClass({
               </p>
             </div>
           </div>
-          <Navigation prev="ux-ui-design" next="taskly"/>
+          <Navigation prev="kashflow" next="taskly"/>
           <Footer/>
         </div>
       </div>
