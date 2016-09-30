@@ -155,15 +155,15 @@ const Taskly = React.createClass({
               <div className="personas">
                 <a className="persona lightbox-link" href="javascript:void(0)" onClick={() => this.openLightbox(0)}>
                   <div className="lightbox-link__overlay"></div>
-                  <img src="../medias/taskly/persona-designer.jpg" alt=""/>
+                  <img src="../medias/taskly/persona-mini-designer.jpg" alt=""/>
                 </a>
                 <a className="persona lightbox-link" href="javascript:void(0)" onClick={() => this.openLightbox(1)}>
                   <div className="lightbox-link__overlay"></div>
-                  <img src="../medias/taskly/persona-entrepreneur.jpg" alt=""/>
+                  <img src="../medias/taskly/persona-mini-entrepreneur.jpg" alt=""/>
                 </a>
                 <a className="persona lightbox-link" href="javascript:void(0)" onClick={() => this.openLightbox(2)}>
                   <div className="lightbox-link__overlay"></div>
-                  <img src="../medias/taskly/persona-project-manager.jpg" alt=""/>
+                  <img src="../medias/taskly/persona-mini-project-manager.jpg" alt=""/>
                 </a>
               </div>
 
