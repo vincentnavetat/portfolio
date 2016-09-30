@@ -8,6 +8,7 @@ import Home from './components/Home';
 import Taskly from './projects/Taskly';
 import UXUIDesign from './projects/UXUIDesign';
 import KashFlow from './projects/KashFlow';
+import Portfolio from './projects/Portfolio';
 
 if (typeof window !== 'undefined') {
   require('./scss/styles.scss');
@@ -20,6 +21,7 @@ render((
       <Route path="taskly" component={Taskly} title="Taskly"/>
       <Route path="ux-ui-design" component={UXUIDesign} title="UX/UI Design"/>
       <Route path="kashflow" component={KashFlow} title="KashFlow"/>
+      <Route path="portfolio" component={Portfolio} title="Portfolio"/>
     </Route>
   </Router>
 ), document.getElementById('app'))
