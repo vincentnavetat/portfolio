@@ -15,7 +15,7 @@ const KashFlow = React.createClass({
       'PostCSS',
       'jQuery',
       'Modernizr',
-      'Gulpjs',
+      'Gulpjs'
     ];
 
     return (

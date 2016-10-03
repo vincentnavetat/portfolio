@@ -22,6 +22,7 @@ render((
       <Route path="ux-ui-design" component={UXUIDesign} title="UX/UI Design"/>
       <Route path="kashflow" component={KashFlow} title="KashFlow"/>
       <Route path="portfolio" component={Portfolio} title="Portfolio"/>
+      <Route path="kaliop" component={Kaliop} title="Kaliop"/>
     </Route>
   </Router>
 ), document.getElementById('app'))

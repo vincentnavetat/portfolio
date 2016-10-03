@@ -14,7 +14,7 @@ const Portfolio = React.createClass({
       'Webpack',
       'SASS',
       'Bourbon',
-      'PostCSS',
+      'PostCSS'
     ];
 
     return (

@@ -8,14 +8,14 @@ import Footer from '../components/Footer';
 var images = [
   '../medias/taskly/persona-designer.jpg',
   '../medias/taskly/persona-entrepreneur.jpg',
-  '../medias/taskly/persona-project-manager.jpg',
+  '../medias/taskly/persona-project-manager.jpg'
 ];
 
 
 var captions = [
   'Persona: Designer',
   'Persona: Entrepreneur',
-  'Persona: Project Manager',
+  'Persona: Project Manager'
 ];
 
 const Taskly = React.createClass({
