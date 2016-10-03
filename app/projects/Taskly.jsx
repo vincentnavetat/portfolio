@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
-import Slider from 'react-slick';
-import Lightbox from 'react-image-lightbox';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import Slider from 'react-slick';
+import Lightbox from 'react-image-lightbox';
 
 var images = [
   '../medias/taskly/persona-designer.jpg',

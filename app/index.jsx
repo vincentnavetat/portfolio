@@ -9,6 +9,7 @@ import Taskly from './projects/Taskly';
 import UXUIDesign from './projects/UXUIDesign';
 import KashFlow from './projects/KashFlow';
 import Portfolio from './projects/Portfolio';
+import Kaliop from './projects/Kaliop';
 
 if (typeof window !== 'undefined') {
   require('./scss/styles.scss');

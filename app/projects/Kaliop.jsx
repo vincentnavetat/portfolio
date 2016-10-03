@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import Slider from 'react-slick';
 
 const Kaliop = React.createClass({
   propTypes: {
@@ -19,7 +20,7 @@ const Kaliop = React.createClass({
 
     var sliderSettings = {
       dots: false,
-      infinite: false,
+      infinite: true,
       speed: 400,
       slidesToShow: 1,
       slidesToScroll: 1
@@ -60,25 +61,26 @@ const Kaliop = React.createClass({
 
             <div className="project-view-summary">
               <p>
-                Kaliop
+                Kaliop is a digital agency employing over 160 people in 8 locations between France, the UK, Australia, Poland and Canada.
+                I have worked as a Full-Stack Developer there between Oct 2013 and Dec 2015.
               </p>
 
               <Slider {...sliderSettings}>
                 <figure>
-                  <figcaption>Financial Times Live</figcaption>
-                  <img src="../medias/kaliop/project-ft-live.png" alt="Project - Financial Times Live"/>
+                  <figcaption>Destination Sud de France</figcaption>
+                  <img src="../medias/kaliop/project-tourism-south-france.jpg" alt="Project - Destination Sud de France"/>
                 </figure>
                 <figure>
-                  <figcaption>Destination Sud de France</figcaption>
-                  <img src="../medias/kaliop/project-tourism-south-france.png" alt="Project - Destination Sud de France"/>
+                  <figcaption>Financial Times Live</figcaption>
+                  <img src="../medias/kaliop/project-ft-live.jpg" alt="Project - Financial Times Live"/>
                 </figure>
                 <figure>
                   <figcaption>French Healthcare Portal</figcaption>
-                  <img src="../medias/kaliop/project-healthcare-france.png" alt="Project - French Healthcare Portal"/>
+                  <img src="../medias/kaliop/project-healthcare-france.jpg" alt="Project - French Healthcare Portal"/>
                 </figure>
                 <figure>
                   <figcaption>Financial Times Live</figcaption>
-                  <img src="../medias/kaliop/project-alcool-info-service.png" alt="Project - Alcool Info Service"/>
+                  <img src="../medias/kaliop/project-alcool-info-service.jpg" alt="Project - Alcool Info Service"/>
                 </figure>
               </Slider>
             </div>
