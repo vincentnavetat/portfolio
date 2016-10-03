@@ -11,6 +11,10 @@
 .tags {
   margin-right: 3rem;
   text-transform: uppercase;
+
+  :last-child {
+    margin-right: 0;
+  }
 }
 
 .tag__category {

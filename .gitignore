@@ -7,3 +7,4 @@ lib
 node_modules
 Thumbs.db
 ehthumbs.db
+npm-debug.log

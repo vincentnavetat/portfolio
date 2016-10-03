@@ -55,12 +55,14 @@ const Portfolio = React.createClass({
                 I created this portfolio with 2 aims in mind. I wanted to design a simple and elegant single-page website where I can explain in details the process behind completed projects. I also wanted to take the opportunity to work on my JS skills and use a modern library for single-page applications such as React.
               </p>
 
+              <img src="../medias/portfolio/portfolio-macbook.png" alt="My portfolio - Homepage"/>
+
               <p>
                 Creating this portfolio from scratch allowed me to have the format I thought was best to show my work, rather than complying to a pre-existing solution.
               </p>
 
               <p>
-                I used React-router to set up the navigation and the ReactCSSTransitionGroup add-on to create smooth visual transitions between the pages. The CSS is written with SASS and use the combination of Bourbon and Neat to handle responsive design and grid layout, following a mobile-first approach. Finally I used Webpack to bundle the application and handle all the assets with ease.
+                I used React-router to set up the navigation and the <span className="code">ReactCSSTransitionGroup</span> add-on to create smooth visual transitions between the pages. The CSS is written with SASS and use the combination of Bourbon and Neat to handle responsive design and grid layout, following a mobile-first approach. Finally I used Webpack to bundle the application and handle all the assets with ease.
               </p>
 
               <p>
