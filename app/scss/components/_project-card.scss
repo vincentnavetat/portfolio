@@ -40,6 +40,10 @@
   top: 0;
   width: 100%;
 
+  @include media($mobile) {
+    height: 12rem;
+  }
+
   @include media($tablet) {
     bottom: 0;
     height: 100%;
@@ -94,7 +98,14 @@
 }
 
 .project-card__skillset,
-.project-card__description,
+.project-card__description {
+  display: none;
+
+  @include media($mobile) {
+    display: block;
+  }
+}
+
 .project-card__overlay-line {
   display: none;
 
@@ -118,8 +129,12 @@
   margin-top: 1.5rem;
   transition-delay: .2s;
 
-  @include media($tablet) {
+  @include media($mobile) {
     font-size: $font-size-l;
-    line-height: $font-size-l;
+  }
+
+  @include media($tablet) {
+    font-size: $font-size-xl;
+    line-height: $font-size-xl;
   }
 }
