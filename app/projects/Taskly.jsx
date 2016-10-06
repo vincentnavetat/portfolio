@@ -378,7 +378,7 @@ const Taskly = React.createClass({
               </p>
             </div>
           </div>
-          <Navigation prev="portfolio" next="ux-ui-design"/>
+          <Navigation prev="kaliop" next="ux-ui-design"/>
           <Footer/>
         </div>
       </div>

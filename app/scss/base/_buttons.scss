@@ -15,11 +15,11 @@
     background: $pelorous;
     bottom: 0;
     content: '';
-    height: 125%;
+    height: 150%;
     left: -10%;
     position: absolute;
     transform: skewX(15deg);
-    transition: .3s all;
+    transition: .3s all ease-in-out;
     width: 0;
     z-index: -1;
   }
