@@ -22,7 +22,9 @@ const KashFlow = React.createClass({
       <div className="page-wrapper">
         <div className="page-content" style={this.props.style}>
           <div className="project">
-            <h1>{this.props.route.title}</h1>
+            <h1>
+              {this.props.route.title}
+            </h1>
 
             <div className="tags-wrapper">
               <div className="tags">

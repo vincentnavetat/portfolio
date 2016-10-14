@@ -80,7 +80,9 @@ const Taskly = React.createClass({
       <div className="page-wrapper">
         <div className="page-content" style={this.props.style}>
           <div className="project">
-            <h1>{this.props.route.title}</h1>
+            <h1>
+              {this.props.route.title}
+            </h1>
 
             <div className="tags-wrapper">
               <div className="tags">
@@ -115,7 +117,7 @@ const Taskly = React.createClass({
               </p>
 
               <p>
-                The start-up Taskly aims at proposing a new take on project management apps. Their goal is to create a simple and seamless experience for teams to collaborate in the creative and technology industries.
+                The start-up Taskly aims at proposing a new take on project management apps. Their goal is to create a simple and seamless collaborative experience for teams in the creative and technology sectors.
               </p>
 
               <p>
@@ -123,7 +125,7 @@ const Taskly = React.createClass({
               </p>
 
               <h2>
-                Competitive research
+                Competitive Research
               </h2>
 
               <p>
@@ -136,20 +138,20 @@ const Taskly = React.createClass({
               </a>
 
               <h2>
-                User research
+                User Research
               </h2>
 
               <p>
-                Based on surveys and interviews, I could make a decision on the mostal valuable features for Taskly.
-                It seemed that potential users had the most issues with consolidating information from different modes of communication, as well as juggling multiple projects at the same time.
+                Based on surveys and interviews, I could make a decision on features that would be included in the Minimum Viable Product (MVP) for Taskly.
+                It seemed that users of existing project management apps had the most problems with consolidating information from different modes of communication, as well as juggling multiple projects at the same time.
               </p>
 
               <h2>
-                User personas
+                User Personas
               </h2>
 
               <p>
-                In order to target specific user needs, I set up 3 different personas: the Creative Employee, the Entrepreneur and the Manager.
+                In order to target specific user needs, I set up 3 different personas: the Creative Employee, the Entrepreneur and the Project Manager.
               </p>
 
               <div className="personas">
@@ -174,28 +176,37 @@ const Taskly = React.createClass({
               </h2>
 
               <p>
-                After defining the features contained in the Most Viable Product for Taskly, I designed a Task for the Project Setup:
-              </p>
-
-              <img src="../medias/taskly/customer-experience-map.png" alt="Customer Experience Map for Taskly"/>
-
-              <h2>
-                Customer experience map
-              </h2>
-
-              <p>
-                Based on the Manager persona, I designed a Customer Experience Map which helped me going though all the steps of a project and have a clear understanding of all the processes involved.
+                After defining the features contained in the MVP for Taskly, I designed a Task Model for the Project Setup:
               </p>
 
               <img src="../medias/taskly/task-model.png" alt="Task Model for Taskly"/>
 
               <h2>
-                Site map
+                Customer Experience Map
               </h2>
 
               <p>
-                After completing a card sorting exercise and content audits on competitors, I was able to organise the Taskly's MVP features into a site map.
+                Based on the Project Manager persona, I designed a Customer Experience Map which helped me going though all the steps of a project and have a clear understanding of all the processes involved.
               </p>
+
+              <img src="../medias/taskly/customer-experience-map.png" alt="Customer Experience Map for Taskly"/>
+
+              <h2>
+                Site Maps
+              </h2>
+
+              <p>
+                In order to create site maps for the different parts of Taskly's website and the application, I gathered insights from:
+              </p>
+
+              <ul>
+                <li>
+                  A card sorting exercise completed by potential users.
+                </li>
+                <li>
+                  A content audit of two of Taskly's main competitors: Asana and Basecamp.
+                </li>
+              </ul>
 
               <h3>
                 Corporate Website
@@ -219,9 +230,14 @@ const Taskly = React.createClass({
                 Sketches
               </h2>
               <p>
-                Having the sitemap defined help me creating the first prototype on paper.
-                Sketching was the best way to define my initial vision of the app and be able to create a first round of usability testing.
-                By showing the screens on paper to a user, I can quickly verify my assumptions and make adjustments without having invested too much time building wireframes.
+                Once the site maps were created and validated by my mentor, I could start working on a paper prototype.
+                Sketching was the best way to define my initial vision of the app. I could draw different ideas and make changes quicker than if I had started with a wireframe software from the beginning.
+              </p>
+              <p>
+                Another advantage is that I was able to have a first round of usability testing, so I could have feedback on my initial ideas and make adjustments before building more detailed wireframes.
+              </p>
+              <p>
+                This first usability testing was done by showing the screens on paper to a user. I would start by showing only the Dashboard, brief the user on a task to perform (for example: set up a new project) and depending on where the user tells me they would click, I show them the following screen.
               </p>
 
               <Slider {...sliderSettings}>
@@ -300,8 +316,13 @@ const Taskly = React.createClass({
               </h2>
 
               <p>
-                Based on the paper prototype and initial user testing, I created wireframes for mobile, tablet and desktop devices on UXPin. This allowed me to create interactive prototypes that I used for a second set of user testing.
-                By using an interactive prototype, I could get a more accurate evaludation of the usability of the app. Testers could navigate autonomously throughout the app to achieve pre-defined goals. I could observe their behavoirs and make the right adjustments afterwards.
+                Based on the paper prototype and first round of usability testing, I created wireframes for mobile, tablet and desktop devices with UXPin.
+                With these wireframes, I could create interactive prototypes for each device using inVision.
+              </p>
+              <p>
+                I could then organise a second round of usability testing and get a more accurate feedback.
+                Testers could navigate autonomously throughout the app to reach the goals that I defined.
+                I could observe their behavoirs and make further adjustments afterwards.
               </p>
 
               <Slider {...sliderSettings}>

@@ -18,7 +18,9 @@ const UXUIDesign = React.createClass({
       <div className="page-wrapper">
         <div className="page-content" style={this.props.style}>
           <div className="project">
-            <h1>{this.props.route.title}</h1>
+            <h1>
+              {this.props.route.title}
+            </h1>
 
             <div className="tags-wrapper">
               <div className="tags">
@@ -52,15 +54,15 @@ const UXUIDesign = React.createClass({
                 I have created a series of designs in order to train myself to creating Apps concepts with the UX/UI designs that would suit them best.
               </p>
 
-              <h3>
+              <h2>
                 Weather Mobile App
-              </h3>
+              </h2>
 
               <img src="../medias/ux-ui-design/weather-app.jpg" alt="Weather Mobile App Design"/>
 
-              <h3>
+              <h2>
                 Physiotherapy Mobile App
-              </h3>
+              </h2>
 
               <img src="../medias/ux-ui-design/physio-app.jpg" alt="Physiotherapy Mobile App Design"/>
             </div>
