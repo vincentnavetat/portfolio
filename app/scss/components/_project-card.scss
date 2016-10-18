@@ -34,14 +34,14 @@
 
 .project-card__overlay-background {
   background: $shark;
-  height: 5.5rem;
+  height: 4.5rem;
   opacity: .4;
   position: absolute;
   top: 0;
   width: 100%;
 
   @include media($mobile) {
-    height: 12rem;
+    height: 15rem;
   }
 
   @include media($tablet) {
@@ -76,8 +76,12 @@
   position: absolute;
   z-index: 1;
 
+  @include media($mobile) {
+    top: 3rem;
+  }
+
   @include media($tablet) {
-    top: 17%;
+    top: 18%;
   }
 }
 
@@ -119,11 +123,13 @@
 
 .project-card__name {
   color: $white;
-  margin-top: 1.5rem;
+  font-weight: $weight-s;
+  margin-top: 1rem;
   transition-delay: .2s;
 
   @include media($mobile) {
     font-size: $font-size-l;
+    font-weight: $weight-m;
   }
 
   @include media($tablet) {
