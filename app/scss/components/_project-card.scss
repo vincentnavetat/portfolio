@@ -56,6 +56,7 @@
 
 .project-card__overlay-line {
   border-top: .1rem solid $white;
+  display: none;
   left: 3%;
   margin-left: 1rem;
   position: absolute;
@@ -63,6 +64,10 @@
   transition: width .2s ease-out;
   width: 0;
   z-index: 1;
+
+  @include media($tablet) {
+    display: block;
+  }
 }
 
 .project-card__overlay-content {
@@ -94,22 +99,10 @@
 
 .project-card__skillset,
 .project-card__description {
-  font-size: $font-size-base;
-}
-
-.project-card__skillset,
-.project-card__description {
   display: none;
+  font-size: $font-size-base;
 
   @include media($mobile) {
-    display: block;
-  }
-}
-
-.project-card__overlay-line {
-  display: none;
-
-  @include media($tablet) {
     display: block;
   }
 }
