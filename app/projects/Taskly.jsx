@@ -113,7 +113,7 @@ const Taskly = React.createClass({
 
             <div className="project-view-summary">
               <p>
-                Taskly is an app I have designed as part of the UX Design course from CareerFoundry, I lead all the steps of the project from market research to interface design.
+                Taskly is a concept app I have designed as part of the UX Design course from CareerFoundry, I lead all the steps of the project from market research to interface design.
               </p>
 
               <p>
