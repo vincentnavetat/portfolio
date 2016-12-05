@@ -61,6 +61,12 @@ const UXUIDesign = React.createClass({
               <img src="../medias/ux-ui-design/weather-app.jpg" alt="Weather Mobile App Design"/>
 
               <h2>
+                Live Football Scores Mobile App
+              </h2>
+
+              <img src="../medias/ux-ui-design/live-scores-app.jpg" alt="Live Scores App Design"/>
+
+              <h2>
                 Physiotherapy Mobile App
               </h2>
 
