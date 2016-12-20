@@ -22,7 +22,7 @@ figure {
   @include outer-container(88rem);
   padding: 0 1.5rem;
 
-  @include media($desktop) {
+  @include media($large) {
     padding: 0;
   }
 }
@@ -33,7 +33,7 @@ figure {
 }
 
 .page-content {
-  @include media($tablet) {
+  @include media($medium) {
     padding: 0;
   }
 }

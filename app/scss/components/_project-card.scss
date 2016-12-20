@@ -9,7 +9,7 @@
   overflow: hidden;
   position: relative;
 
-  @include media($tablet) {
+  @include media($medium) {
     &:hover {
       .project-card__overlay-background {
         opacity: .4;
@@ -39,11 +39,11 @@
     top: 0;
     width: 100%;
 
-    @include media($mobile) {
+    @include media($small) {
       height: 15rem;
     }
 
-    @include media($tablet) {
+    @include media($medium) {
       bottom: 0;
       height: 100%;
       left: 0;
@@ -64,7 +64,7 @@
     width: 0;
     z-index: 1;
 
-    @include media($tablet) {
+    @include media($medium) {
       display: block;
     }
   }
@@ -75,11 +75,11 @@
     position: absolute;
     z-index: 1;
 
-    @include media($mobile) {
+    @include media($small) {
       top: 3rem;
     }
 
-    @include media($tablet) {
+    @include media($medium) {
       top: 18%;
     }
   }
@@ -90,7 +90,7 @@
 
   &__overlay-background,
   &__overlay-text {
-    @include media($tablet) {
+    @include media($medium) {
       opacity: 0;
     }
   }
@@ -105,7 +105,7 @@
     display: none;
     font-size: $font-size-base;
 
-    @include media($mobile) {
+    @include media($small) {
       display: block;
     }
   }
@@ -126,12 +126,12 @@
     margin-top: 1rem;
     transition-delay: .2s;
 
-    @include media($mobile) {
+    @include media($small) {
       font-size: $font-size-l;
       font-weight: $weight-m;
     }
 
-    @include media($tablet) {
+    @include media($medium) {
       font-size: $font-size-xl;
       line-height: $font-size-xl;
     }

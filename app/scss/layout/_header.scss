@@ -55,7 +55,7 @@
     color: $pale-sky;
     display: none;
 
-    @include media($mobile) {
+    @include media($small) {
       display: inline-block;
     }
   }
@@ -63,7 +63,7 @@
   &__description--mobile {
     display: inline-block;
 
-    @include media($mobile) {
+    @include media($small) {
       display: none;
     }
   }

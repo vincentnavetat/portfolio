@@ -13,10 +13,10 @@
 ///   - Number of columns to use in the new grid context. Can be set as a shorthand in the first parameter.
 ///
 /// @example scss - Usage
-///   $mobile: new-breakpoint(max-width 480px 4);
+///   $small: new-breakpoint(max-width 480px 4);
 ///
 ///   .element {
-///     @include media($mobile) {
+///     @include media($small) {
 ///       @include span-columns(4);
 ///     }
 ///   }

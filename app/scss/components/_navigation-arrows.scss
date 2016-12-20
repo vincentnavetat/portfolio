@@ -38,7 +38,7 @@
   }
 }
 
-@include media($tablet) {
+@include media($medium) {
   .nav-arrow {
     margin-top: -3.75rem;
     padding-top: 2.5rem;
