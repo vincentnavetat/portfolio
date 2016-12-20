@@ -30,110 +30,110 @@
       }
     }
   }
-}
 
-.project-card__overlay-background {
-  background: $shark;
-  height: 4.5rem;
-  opacity: .4;
-  position: absolute;
-  top: 0;
-  width: 100%;
+  &__overlay-background {
+    background: $shark;
+    height: 4.5rem;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    width: 100%;
 
-  @include media($mobile) {
-    height: 15rem;
+    @include media($mobile) {
+      height: 15rem;
+    }
+
+    @include media($tablet) {
+      bottom: 0;
+      height: 100%;
+      left: 0;
+      right: 0;
+      transition: opacity .3s ease-in;
+      z-index: 1;
+    }
   }
 
-  @include media($tablet) {
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    right: 0;
-    transition: opacity .3s ease-in;
+  &__overlay-line {
+    border-top: .1rem solid $white;
+    display: none;
+    left: 3%;
+    margin-left: 1rem;
+    position: absolute;
+    top: 16%;
+    transition: width .2s ease-out;
+    width: 0;
     z-index: 1;
-  }
-}
 
-.project-card__overlay-line {
-  border-top: .1rem solid $white;
-  display: none;
-  left: 3%;
-  margin-left: 1rem;
-  position: absolute;
-  top: 16%;
-  transition: width .2s ease-out;
-  width: 0;
-  z-index: 1;
-
-  @include media($tablet) {
-    display: block;
-  }
-}
-
-.project-card__overlay-content {
-  color: $white;
-  left: 3%;
-  position: absolute;
-  z-index: 1;
-
-  @include media($mobile) {
-    top: 3rem;
+    @include media($tablet) {
+      display: block;
+    }
   }
 
-  @include media($tablet) {
-    top: 18%;
-  }
-}
+  &__overlay-content {
+    color: $white;
+    left: 3%;
+    position: absolute;
+    z-index: 1;
 
-.project-card__overlay-text {
-  opacity: 1;
-}
+    @include media($mobile) {
+      top: 3rem;
+    }
 
-.project-card__overlay-background,
-.project-card__overlay-text {
-  @include media($tablet) {
-    opacity: 0;
-  }
-}
-
-.project-card__image {
-  transition: transform .3s linear; // transition out
-  width: 100%;
-}
-
-.project-card__skillset,
-.project-card__description {
-  display: none;
-  font-size: $font-size-base;
-
-  @include media($mobile) {
-    display: block;
-  }
-}
-
-.project-card__skillset,
-.project-card__description,
-.project-card__name {
-  transition: transform .3s ease-out, opacity .3s ease-out;
-}
-
-.project-card__description {
-  transition-delay: .1s;
-}
-
-.project-card__name {
-  color: $white;
-  font-weight: $weight-s;
-  margin-top: 1rem;
-  transition-delay: .2s;
-
-  @include media($mobile) {
-    font-size: $font-size-l;
-    font-weight: $weight-m;
+    @include media($tablet) {
+      top: 18%;
+    }
   }
 
-  @include media($tablet) {
-    font-size: $font-size-xl;
-    line-height: $font-size-xl;
+  &__overlay-text {
+    opacity: 1;
+  }
+
+  &__overlay-background,
+  &__overlay-text {
+    @include media($tablet) {
+      opacity: 0;
+    }
+  }
+
+  &__image {
+    transition: transform .3s linear; // transition out
+    width: 100%;
+  }
+
+  &__skillset,
+  &__description {
+    display: none;
+    font-size: $font-size-base;
+
+    @include media($mobile) {
+      display: block;
+    }
+  }
+
+  &__skillset,
+  &__description,
+  &__name {
+    transition: transform .3s ease-out, opacity .3s ease-out;
+  }
+
+  &__description {
+    transition-delay: .1s;
+  }
+
+  &__name {
+    color: $white;
+    font-weight: $weight-s;
+    margin-top: 1rem;
+    transition-delay: .2s;
+
+    @include media($mobile) {
+      font-size: $font-size-l;
+      font-weight: $weight-m;
+    }
+
+    @include media($tablet) {
+      font-size: $font-size-xl;
+      line-height: $font-size-xl;
+    }
   }
 }

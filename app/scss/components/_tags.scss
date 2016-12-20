@@ -17,12 +17,6 @@
   }
 }
 
-.tag__category {
-  color: $heather;
-  font-size: 1.2rem;
-  font-weight: $weight-m;
-}
-
 .tag {
   background: $athens-gray;
   border-radius: .5rem;
@@ -32,4 +26,10 @@
   margin-bottom: 1.5rem;
   margin-right: .8rem;
   padding: .1rem 1.2rem;
+
+  &__category {
+    color: $heather;
+    font-size: 1.2rem;
+    font-weight: $weight-m;
+  }
 }

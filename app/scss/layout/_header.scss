@@ -14,57 +14,57 @@
   .btn {
     margin-top: .3rem;
   }
-}
 
-.header__side {
-  @include span-columns(6);
-  height: 4.4rem;
-}
-
-.header__side--right {
-  .header__link {
-    margin-right: 3rem;
-  }
-}
-
-.header__link {
-  text-decoration: none;
-
-  span {
-    transition: opacity .3s;
+  &__side {
+    @include span-columns(6);
+    height: 4.4rem;
   }
 
-  &:hover {
-    span {
-      opacity: .7;
-      text-decoration: none;
+  &__side--right {
+    .header__link {
+      margin-right: 3rem;
     }
   }
-}
 
-.header__name,
-.header__description {
-  clear: both;
-  float: left;
-}
+  &__link {
+    text-decoration: none;
 
-.header__name {
-  color: $shark;
-}
+    span {
+      transition: opacity .3s;
+    }
 
-.header__description {
-  color: $pale-sky;
-  display: none;
-
-  @include media($mobile) {
-    display: inline-block;
+    &:hover {
+      span {
+        opacity: .7;
+        text-decoration: none;
+      }
+    }
   }
-}
 
-.header__description--mobile {
-  display: inline-block;
+  &__name,
+  &__description {
+    clear: both;
+    float: left;
+  }
 
-  @include media($mobile) {
+  &__name {
+    color: $shark;
+  }
+
+  &__description {
+    color: $pale-sky;
     display: none;
+
+    @include media($mobile) {
+      display: inline-block;
+    }
+  }
+
+  &__description--mobile {
+    display: inline-block;
+
+    @include media($mobile) {
+      display: none;
+    }
   }
 }

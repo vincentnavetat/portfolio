@@ -22,17 +22,17 @@
       opacity: .6;
     }
   }
-}
 
-.lightbox-link__overlay {
-  border-left: 5.8rem solid transparent;
-  border-top: 5.8rem solid $shark;
-  height: 0;
-  opacity: .4;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: opacity .2s ease-out;
-  width: 0;
-  z-index: 1;
+  &__overlay {
+    border-left: 5.8rem solid transparent;
+    border-top: 5.8rem solid $shark;
+    height: 0;
+    opacity: .4;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity .2s ease-out;
+    width: 0;
+    z-index: 1;
+  }
 }

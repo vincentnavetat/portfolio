@@ -1,19 +1,17 @@
-.fade-wait-leave {
-  opacity: 1;
-}
-
+.fade-wait-appear.fade-wait-appear-active,
+.fade-wait-enter.fade-wait-enter-active,
 .fade-wait-leave.fade-wait-leave-active {
-  opacity: 0;
   transition: opacity .5s ease-in;
 }
 
+.fade-wait-leave.fade-wait-leave-active,
 .fade-wait-appear,
 .fade-wait-enter {
   opacity: 0;
 }
 
+.fade-wait-leave,
 .fade-wait-appear.fade-wait-appear-active,
 .fade-wait-enter.fade-wait-enter-active {
   opacity: 1;
-  transition: opacity .5s ease-in;
 }
