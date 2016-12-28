@@ -81,8 +81,12 @@ const Kaliop = React.createClass({
                   <img src="../medias/kaliop/project-healthcare-france.jpg" alt="Project - French Healthcare Portal"/>
                 </figure>
                 <figure>
-                  <figcaption>Financial Times Live</figcaption>
+                  <figcaption>French National Alcohol Support</figcaption>
                   <img src="../medias/kaliop/project-alcool-info-service.jpg" alt="Project - Alcool Info Service"/>
+                </figure>
+                <figure>
+                  <figcaption>Pensions Expert</figcaption>
+                  <img src="../medias/kaliop/project-pensions-expert.jpg" alt="Project - Pensions Expert"/>
                 </figure>
               </Slider>
             </div>
