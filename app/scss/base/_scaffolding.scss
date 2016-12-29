@@ -28,8 +28,12 @@ figure {
 }
 
 .transition-wrapper {
-  padding-top: 12rem;
+  padding-top: 10rem;
   position: relative;
+
+  @include media($medium) {
+    padding-top: 12rem;
+  }
 }
 
 .page-content {

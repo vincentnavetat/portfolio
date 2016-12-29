@@ -1,6 +1,10 @@
 .tags-wrapper {
   @include outer-container(100%);
-  margin: 6rem 0 4.5rem;
+  margin: 4.5rem 0;
+
+  @include media($medium) {
+    margin-top: 6rem;
+  }
 }
 
 .tags,
